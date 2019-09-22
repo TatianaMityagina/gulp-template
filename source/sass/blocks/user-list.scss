@@ -1,0 +1,13 @@
+@media (min-width: $mobile-width) {
+  .user-list {
+    list-style: none;
+  }
+
+  .user-list__text {
+    display: none;
+  }
+
+  .user-list__link--call {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+@media (min-width: $mobile-width) {
+  .history__title {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .history__button {
+    font-size: 14px;
+    line-height: 16px;
+    color: #00b2ff;
+
+    border: 1px solid #00b2ff;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+}

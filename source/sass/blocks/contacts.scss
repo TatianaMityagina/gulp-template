@@ -1,0 +1,41 @@
+@media (min-width: $mobile-width) {
+  .contacts__title {
+    position: relative;
+
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #1b2d37;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 3px;
+      left: 150px;
+
+      width: 16px;
+      height: 2px;
+
+      background-image: url("../img/icon-minus.svg");
+    }
+  }
+
+  .contacts__address {
+    font-size: 15px;
+    line-height: 25px;
+    color: #1b2d37;
+
+    opacity: 0.5;
+  }
+
+  .contacts__phone {
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #1b2d37;
+
+    opacity: 0.5;
+  }
+}

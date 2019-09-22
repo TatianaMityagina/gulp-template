@@ -1,0 +1,74 @@
+@media (min-width: $mobile-width) {
+  .service {
+    background: #1b2d37;
+  }
+
+  .service__title {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 140.62%;
+    color: #ffffff;
+  }
+
+  .service__list {
+    list-style: none;
+  }
+
+  .service__link {
+    display: block;
+
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+
+
+    &--production {
+      width: 290px;
+      height: 256px;
+
+      background-image: url("../img/production-mobile.png");
+    }
+
+    &--installation {
+      width: 290px;
+      height: 256px;
+
+      background-image: url("../img/installation-mobile.png");
+    }
+
+    &--component {
+      width: 290px;
+      height: 256px;
+
+      background-image: url("../img/component-mobile.png");
+    }
+  }
+
+  .service__button {
+    position: relative;
+
+    width: 63px;
+    height: 63px;
+
+    background: #00b2ff;
+    border: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 30px;
+      left: 30px;
+
+      width: 8px;
+      height: 8px;
+
+      background-image: url("../img/icon-vector.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@media (min-width: $mobile-width) {
+  .main-nav__title {
+    display: none;
+  }
+
+  .main-nav__text {
+    display: none;
+  }
+
+  .main-nav__toggle {
+    position: relative;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+
+      width: 37px;
+      height: 13px;
+
+      background-image: url("../img/icon-menu.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__title {
+    display: inline;
+
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    color: #ffffff;
+  }
+
+  .main-nav__text {
+    display: inline;
+
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #788891;
+  }
+}

@@ -1,0 +1,17 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,81 @@
+@media (min-width: $mobile-width) {
+  .form-question {
+    background: #00b2ff;
+  }
+
+  .form-question__title {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 140.62%;
+    color: #ffffff;
+  }
+
+  .form-question__text {
+    color: #ffffff;
+  }
+
+  .form-question__list {
+    list-style: none;
+  }
+
+  .form-question__input-text {
+    width: 290px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+  }
+
+  .form-question__textarea {
+    width: 290px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+  }
+
+  .form-question__input-text::placeholder,
+  .form-question__textarea::placeholder {
+    color: #ffffff;
+  }
+
+  .form-question__button {
+    padding: 10px 0;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .form-question__consent {
+    position: relative;
+
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+
+    opacity: 0.8;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -20px;
+
+      width: 17px;
+      height: 16px;
+
+      border: 1px solid #ffffff;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 3px;
+      left: -15px;
+
+      width: 8px;
+      height: 8px;
+
+      background-image: url("../img/icon-check.svg");
+    }
+  }
+}

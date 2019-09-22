@@ -1,0 +1,23 @@
+@media (min-width: $mobile-width) {
+  .promo__title {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .promo__description {
+    line-height: 156.8%;
+    color: #ffffff;
+  }
+
+  .promo__button {
+    border: none;
+  }
+
+  .promo__button-descktop {
+    display: none;
+  }
+}

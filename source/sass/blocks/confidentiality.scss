@@ -1,0 +1,11 @@
+@media (min-width: $mobile-width) {
+  .confidentiality__text {
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1b2d37;
+
+    opacity: 0.5;
+  }
+}

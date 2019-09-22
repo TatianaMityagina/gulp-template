@@ -1,0 +1,22 @@
+@media (min-width: $mobile-width) {
+  .page-footer__title {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    color: #203c42;
+  }
+
+  .page-footer__text {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #788891;
+  }
+
+  .page-footer__period {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
