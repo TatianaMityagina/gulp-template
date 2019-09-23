@@ -1,9 +1,18 @@
 @media (min-width: $mobile-width) {
   .service {
+    padding-top: 50px;
+    padding-bottom: 34px;
+
     background: #1b2d37;
   }
 
   .service__title {
+    width: 290px;
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
+    margin-bottom: 42px;
+
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: normal;
     font-size: 28px;
@@ -12,26 +21,31 @@
   }
 
   .service__list {
+    padding: 0;
+    margin: 0;
+
     list-style: none;
   }
 
+  .service__item {
+    margin-bottom: 30px;
+  }
+
   .service__link {
+    position: relative;
+
     display: block;
+    padding: 0;
+    margin: 0;
 
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    color: #ffffff;
     text-decoration: none;
-
 
     &--production {
       width: 290px;
       height: 256px;
 
       background-image: url("../img/production-mobile.png");
+      background-repeat: no-repeat;
     }
 
     &--installation {
@@ -39,6 +53,7 @@
       height: 256px;
 
       background-image: url("../img/installation-mobile.png");
+      background-repeat: no-repeat;
     }
 
     &--component {
@@ -46,11 +61,36 @@
       height: 256px;
 
       background-image: url("../img/component-mobile.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .service__text {
+    padding: 0;
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-right: 20px;
+    margin: 0;
+    width: 200px;
+
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+
+    &--component {
+      padding-top: 30px;
     }
   }
 
   .service__button {
     position: relative;
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
 
     width: 63px;
     height: 63px;
@@ -61,14 +101,75 @@
     &::after {
       position: absolute;
       content: "";
-      top: 30px;
-      left: 30px;
+      top: 27px;
+      left: 28px;
 
       width: 8px;
       height: 8px;
 
       background-image: url("../img/icon-vector.svg");
       background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .service {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .service__title {
+    width: 620px;
+    padding-left: 0;
+    margin-bottom: 50px;
+
+    font-size: 32px;
+  }
+
+  .service__item {
+    margin-bottom: 48px;
+
+    &--installation {
+      margin-bottom: 46px;
+    }
+  }
+
+  .service__link {
+    &--production {
+      width: 720px;
+      height: 256px;
+
+      background-image: url("../img/production-tablet.png");
+    }
+
+    &--installation {
+      width: 720px;
+      height: 256px;
+
+      background-image: url("../img/installation-tablet.png");
+    }
+
+    &--component {
+      width: 720px;
+      height: 256px;
+
+      background-image: url("../img/component-tablet.png");
+    }
+  }
+
+  .service__text {
+    padding-top: 40px;
+    padding-left: 45px;
+    width: 200px;
+
+    &--installation {
+      width: 230px;
+    }
+
+    &--component {
+      padding-top: 50px;
+      width: 230px;
     }
   }
 }

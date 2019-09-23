@@ -1,4 +1,21 @@
 @media (min-width: $mobile-width) {
+  .main-nav {
+    display: flex;
+    min-width: 320px;
+  }
+
+  .main-nav__logo-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .main-nav__logo {
+    margin-right: 113px;
+    padding-top: 12px;
+    padding-left: 2px;
+  }
+
   .main-nav__title {
     display: none;
   }
@@ -9,6 +26,8 @@
 
   .main-nav__toggle {
     position: relative;
+
+    padding-top: 12px;
 
     background-color: transparent;
     border: none;
@@ -30,8 +49,37 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav__logo-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .main-nav__logo-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .main-nav__logo {
+    margin-right: 15px;
+    padding-top: 20px;
+  }
+
+  .main-nav__logo-title {
+    display: flex;
+    flex-direction: column;
+    padding-top: 17px;
+    margin-right: 360px;
+    width: 135px;
+  }
+
+  .main-nav__toggle {
+    padding-top: 5px;
+  }
+
   .main-nav__title {
     display: inline;
+    margin: 0;
 
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: bold;

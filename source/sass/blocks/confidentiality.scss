@@ -1,11 +1,36 @@
 @media (min-width: $mobile-width) {
+  .confidentiality {
+    padding-top: 28px;
+  }
+
   .confidentiality__text {
+    margin: 0;
+    margin-bottom: 20px;
+
     font-size: 13px;
     line-height: 24px;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 0.04em;
     color: #1b2d37;
 
     opacity: 0.5;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .confidentiality {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 23px;
+    width: 768px;
+
+    border-top: 1px solid rgba(98, 105, 98, 0.2);
+  }
+
+  .confidentiality__text {
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }

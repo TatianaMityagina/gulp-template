@@ -1,6 +1,17 @@
 @media (min-width: $mobile-width) {
   .user-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     list-style: none;
+  }
+
+  .user-list__item {
+    margin: 0;
+    margin-right: 22px;
+    padding: 0;
+    padding-top: 6px;
   }
 
   .user-list__text {
@@ -9,5 +20,12 @@
 
   .user-list__link--call {
     display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-list__item {
+    padding-top: 14px;
+    margin-right: 32px;
   }
 }

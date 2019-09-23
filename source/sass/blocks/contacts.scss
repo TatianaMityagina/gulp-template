@@ -1,19 +1,31 @@
 @media (min-width: $mobile-width) {
+  .contacts {
+    padding-top: 29px;
+    padding-bottom: 27px;
+
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+  }
+
   .contacts__title {
     position: relative;
+
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
 
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: normal;
     font-size: 15px;
     line-height: 16px;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #1b2d37;
 
     &::after {
       position: absolute;
       content: "";
-      top: 3px;
-      left: 150px;
+      top: 6px;
+      left: 272px;
 
       width: 16px;
       height: 2px;
@@ -23,11 +35,45 @@
   }
 
   .contacts__address {
+    margin: 0;
+    width: 270px;
+
     font-size: 15px;
     line-height: 25px;
     color: #1b2d37;
 
     opacity: 0.5;
+  }
+
+  .contacts__phone {
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #1b2d37;
+
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 38px;
+
+    border: none;
+  }
+
+  .contacts__title {
+    padding-left: 2px;
+    margin-bottom: 25px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .contacts__address {
+    padding-left: 2px;
+    width: 335px;
   }
 
   .contacts__phone {
