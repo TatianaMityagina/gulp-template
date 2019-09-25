@@ -31,7 +31,6 @@
   width: 100%;
 }
 
-
 .service__link {
   display: block;
   padding: 0;
@@ -94,5 +93,48 @@
 
     background-image: url("../img/icon-vector.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .service {
+    padding-top: 50px;
+    padding-bottom: 17px;
+  }
+
+  .service__wrapper {
+    max-width: 765px;
+  }
+
+  .service__title {
+    margin-bottom: 52px;
+    width: 615px;
+
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+
+  .service__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service__item {
+    margin-bottom: 18px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .service__image {
+    width: 715px;
+    height: 256px;
+  }
+
+  .service__text {
+    padding-top: 40px;
+
+    &--component {
+      padding-top: 50px;
+    }
   }
 }

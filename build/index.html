@@ -184,20 +184,19 @@
     </section>
 
     <section class="history container">
-      <h2 class="history__title" id="history">О компании</h2>
-      <p class="history__text">
+      <h2 id="history">О компании</h2>
+      <p>
         Мы поставляем электронные комплектующие, производим печатные платы
         и предоставляем мировые технологии с 1997 года.
         Выполняем срочные заказы и пилотные образцы до 10 дней.
       </p>
-      <p class="history__text history__text--second">
+      <p>
         Наши поставщики - мировые производители электронных компонентов:
         OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие
-        Service Devices применяются на предприятиях Российских Железных Дорог
-        (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
-        Среди наших клиентов крупнейшие Производители светотехники России.
+        Service Devices применяются на предприятиях<span class="history__text-secret"> Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
+        Среди наших клиентов крупнейшие Производители светотехники России.</span>
       </p>
-      <a class="history__button button" href="#">Подробнее</a>
+      <a class="button" href="#">Подробнее</a>
     </section>
 
     <section class="service">
@@ -207,9 +206,9 @@
           <li class="service__item">
             <a class="service__link service__link--production" href="#" id="production">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/production-mobile.png">
-                <source media="(max-width: 1023px)" srcset="img/production-tablet.png">
-                <img class="sirvice__link-image" src="img/production-desktop.png" width="370" height="620" alt="Производство печатных плат">
+                <source media="(max-width: 767px)" srcset="img/production-mobile@1x.png 1x, img/production-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/production-tablet@1x.png 1x, img/production-tablet@2x.png 2x">
+                <img class="service__image" src="img/production-desktop@1x.png 1x" srcset="img/production-desktop@2x.png 2x" width="370" height="620" alt="Производство печатных плат">
               </picture>
               <p class="service__text">Производство печатных плат</p>
               <button class="service__button" aria-label="Ознакомиться"></button>
@@ -218,9 +217,9 @@
           <li class="service__item service__item--installation">
             <a class="service__link service__link--installation" href="#" id="installation">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/installation-mobile.png">
-                <source media="(max-width: 1023px)" srcset="img/installation-tablet.png">
-                <img class="sirvice__link-image" src="img/installation-desktop.png" width="370" height="620" alt="Монтаж печатных плат">
+                <source media="(max-width: 767px)" srcset="img/installation-mobile@1x.png 1x, img/installation-m@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/installation-tablet@1x.png 1x, img/installation-tablet@2x.png 2x">
+                <img class="service__image" src="img/installation-desktop@1x.png 1x" srcset="img/installation-desktop@2x.png 2x" width="370" height="620" alt="Монтаж печатных плат">
               </picture>
               <p class="service__text service__text--installation">Монтаж печатных плат</p>
               <button class="service__button" aria-label="Ознакомиться"></button>
@@ -229,9 +228,9 @@
           <li class="service__item">
             <a class="service__link service__link--component" href="#" id="component">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/component-mobile.png">
-                <source media="(max-width: 1023px)" srcset="img/component-tablet.png">
-                <img class="sirvice__link-image" src="img/component-desktop.png" width="370" height="620" alt="Комплектующие для светотехники">
+                <source media="(max-width: 767px)" srcset="img/component-mobile@1x.png 1x, img/component-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/component-tablet@1x.png 1x, img/component-tablet@2x.png 2x">
+                <img class="service__image" src="img/component-desktop@1x.png 1x" srcset="img/component-desktop@2x.png 2x" width="370" height="620" alt="Комплектующие для светотехники">
               </picture>
               <p class="service__text service__text--component">Комплектующие для светотехники</p>
               <button class="service__button" aria-label="Ознакомиться"></button>
@@ -272,18 +271,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__top">
-        <div class="page-footer__logo-wrapper">
-          <a class="page-footer__logo" href="#">
-            <svg class="page-footer__logo-icon" width="52" height="52">
-              <use xlink:href="#icon-logo-mobile"></use>
-            </svg>
-          </a>
-
-          <div class="page-footer__logo-title">
-            <h2 class="page-footer__title">Service Device</h2>
-            <span class="page-footer__text">умные технологии</span>
-          </div>
-        </div>
+        <img src="../img/logo-footer.svg" width="216" height="52" alt="Логотип компании">
 
         <ul class="social">
           <li class="social__item">
@@ -388,6 +376,5 @@
     </form>
   </div>
   <div class="overlay hidden"></div>
-  <script src="js/dialog.js"></script>
 </body>
 </html>

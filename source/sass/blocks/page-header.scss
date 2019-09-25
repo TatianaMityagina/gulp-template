@@ -7,7 +7,9 @@
   padding-bottom: 275px;
 
   background-color: #1b2d37;
-  background-image: url("../img/fond-header-desktop.png");
+  background-image: url("../img/main-bg-desktop@1x.png");
+  background-size: 1920px 878px;
+  background-position-x: -240px;
   background-repeat: no-repeat;
 
   &::after {
@@ -20,7 +22,7 @@
     width: 705px;
     height: 515px;
 
-    background-image: url("../img/board-desktop.png");
+    background-image: url("../img/main-bg2-desktop@1x.png");
     background-repeat: no-repeat;
   }
 }

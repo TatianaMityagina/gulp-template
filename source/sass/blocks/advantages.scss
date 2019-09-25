@@ -1,4 +1,5 @@
 .advantages {
+
   padding-top: 58px;
 }
 
@@ -21,6 +22,7 @@
   border-right: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
   border-left: 2px solid #00b2ff;
+  background-color: #ffffff;
 
   cursor: pointer;
 
@@ -79,4 +81,37 @@
   margin: 0;
 
   color: #666666;
+}
+
+@media (max-width: $tablet-width) {
+  .advantages {
+    padding-top: 0;
+  }
+
+  .advantages__item {
+    padding-top: 25px;
+    padding-left: 25px;
+    width: 47.917%;
+
+    &--detective {
+      padding-bottom: 35px;
+    }
+
+    &--tag {
+      padding-top: 20px;
+    }
+  }
+
+  .advantages svg {
+    margin-bottom: 0;
+  }
+
+  .advantages h3 {
+    margin-bottom: 10px;
+  }
+
+  .advantages p {
+    padding-right: 25px;
+    padding-bottom: 22px;
+  }
 }

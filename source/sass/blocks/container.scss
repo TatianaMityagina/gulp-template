@@ -6,6 +6,7 @@
   padding-right: 30px;
 
   @media (max-width: $tablet-width) {
+    max-width: 770px;
     padding-right: 25px;
     padding-left: 25px;
   }

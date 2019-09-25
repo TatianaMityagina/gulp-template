@@ -16,12 +16,13 @@
     width: 200px;
     height: 325px;
 
-    background-image: url("../img/date-desktop.jpg");
+    background-image: url("../img/2005@1x.png");
+    background-size: 75%;
     background-repeat: no-repeat;
   }
 }
 
-.history__title {
+.history h2 {
   z-index: 10;
 
   padding: 0;
@@ -35,23 +36,27 @@
   line-height: 51px;
 }
 
-.history__text {
+.history p {
   z-index: 10;
 
   padding: 0;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   width: 980px;
-
-  &--second {
-    margin-bottom: 38px;
-  }
 }
 
-.history__button {
+.history span {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.history a {
   display: block;
   padding: 14px 0;
   width: 180px;
+  margin-top: 38px;
 
   font-size: 14px;
   line-height: 16px;
@@ -61,4 +66,51 @@
   border: 1px solid #00b2ff;
   border-radius: 5px;
   background-color: #ffffff;
+}
+
+@media (max-width: $tablet-width) {
+  .history {
+    padding-top: 10px;
+    padding-left: 210px;
+    padding-bottom: 108px;
+
+    &::before {
+      top: 8px;
+      left: -8px;
+
+      background-size: auto auto;
+    }
+  }
+
+  .history h2 {
+    margin-bottom: 26px;
+
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+
+  .history p {
+    padding-left: 2px;
+    margin-bottom: 22px;
+    width: 530px;
+  }
+
+  .history span {
+    white-space: nowrap;
+  }
+
+  .history a {
+    display: block;
+    padding: 14px 0;
+    width: 180px;
+
+    font-size: 14px;
+    line-height: 16px;
+    color: #00b2ff;
+    text-decoration: none;
+
+    border: 1px solid #00b2ff;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
 }
