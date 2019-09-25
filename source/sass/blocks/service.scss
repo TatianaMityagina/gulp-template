@@ -1,12 +1,8 @@
 .service {
   padding-top: 90px;
-  padding-bottom: 80px;
+  padding-bottom: 53px;
 
   background: #1b2d37;
-}
-
-.service__wrapper {
-  max-width: 1170px;
 }
 
 .service__title {
@@ -23,46 +19,33 @@
 
 .service__list {
   display: flex;
-  justify-content: space-between;
-  padding: 0;
-  max-width: 1170px;
-
   list-style: none;
+  padding: 0;
 }
 
 .service__item {
-  margin-bottom: 30px;
-  width: 31.624%;
-}
-
-.service__link {
   position: relative;
 
+  margin-bottom: 30px;
+  margin-right: 2.564%;
+  width: 100%;
+}
+
+
+.service__link {
   display: block;
   padding: 0;
   margin: 0;
   width: 100%;
-  max-width: 370px;
-  height: 620px;
 
   text-decoration: none;
-
-  background-repeat: no-repeat;
-
-  &--production {
-    background-image: url("../img/production-desktop.png");
-  }
-
-  &--installation {
-    background-image: url("../img/installation-desktop.png");
-  }
-
-  &--component {
-    background-image: url("../img/component-desktop.png");
-  }
 }
 
 .service__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+
   padding: 0;
   padding-top: 50px;
   padding-left: 45px;
@@ -90,7 +73,7 @@
     position: absolute;
     content: "";
 
-    bottom: 0;
+    bottom: 28px;
     right: 0;
 
     width: 63px;
@@ -103,7 +86,7 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: 27px;
+    bottom: 56px;
     right: 25px;
 
     width: 8px;

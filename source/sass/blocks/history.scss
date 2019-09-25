@@ -1,16 +1,16 @@
 .history {
   position: relative;
 
-  padding-top: 76px;
-  padding-left: 182px;
-  padding-bottom: 110px;
+  padding-top: 60px;
+  padding-left: 180px;
+  padding-bottom: 108px;
   max-width: 1170px;
 
   &::before {
     position: absolute;
     content: "";
-    top: 80px;
-    left: -25px;
+    top: 62px;
+    left: -29px;
     z-index: -1;
 
     width: 200px;
@@ -41,6 +41,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 22px;
+  width: 980px;
 
   &--second {
     margin-bottom: 38px;
@@ -48,12 +49,14 @@
 }
 
 .history__button {
+  display: block;
   padding: 14px 0;
   width: 180px;
 
   font-size: 14px;
   line-height: 16px;
   color: #00b2ff;
+  text-decoration: none;
 
   border: 1px solid #00b2ff;
   border-radius: 5px;

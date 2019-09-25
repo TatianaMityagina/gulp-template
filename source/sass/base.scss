@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  min-width: 320px;
   margin: 0;
   padding: 0;
 
@@ -19,6 +18,10 @@ body {
   line-height: 22px;
 
   background-color: #ffffff;
+}
+
+.hidden {
+  display: none;
 }
 
 .visually-hidden {

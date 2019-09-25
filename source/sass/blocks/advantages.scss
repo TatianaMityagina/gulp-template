@@ -1,14 +1,11 @@
 .advantages {
-  padding-top: 75px;
+  padding-top: 58px;
 }
 
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1170px;
-  padding: 0;
-  margin: 0 auto;
   list-style: none;
 }
 
@@ -25,6 +22,8 @@
   border-bottom: 1px solid #ebebeb;
   border-left: 2px solid #00b2ff;
 
+  cursor: pointer;
+
   &--detective {
     padding-top: 44px;
     padding-bottom: 44px;
@@ -37,29 +36,31 @@
   &:hover {
     background-color: #00b2ff;
 
-    .advantages__icon {
+    svg {
       fill: #ffffff;
     }
 
-    .advantages__title {
+    h3 {
       color: #ffffff;
     }
 
-    .advantages__description {
+    p {
       color: #ffffff;
     }
   }
 }
 
-.advantages__icon {
+.advantages a {
+  text-decoration: none;
+}
+
+.advantages svg {
   margin-bottom: 14px;
 
-  &--hired {
-    margin-bottom: 18px;
-  }
+  fill: #00b2ff;
 }
 
-.advantages__title {
+.advantages h3 {
   padding: 0;
   margin: 0;
   margin-bottom: 16px;
@@ -69,15 +70,13 @@
   font-size: 24px;
   line-height: 34px;
   color: #00b2ff;
-
-  &--tag {
-    margin-bottom: 15px;
-  }
 }
 
-.advantages__description {
+.advantages p {
   padding: 0;
   padding-right: 43px;
   padding-bottom: 65px;
   margin: 0;
+
+  color: #666666;
 }
