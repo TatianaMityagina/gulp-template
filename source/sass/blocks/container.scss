@@ -1,17 +1,14 @@
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     padding-right: 25px;
     padding-left: 25px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 0;
-    padding-left: 0;
+  @media (max-width: $mobile-width) {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }

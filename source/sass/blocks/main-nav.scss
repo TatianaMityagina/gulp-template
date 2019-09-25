@@ -1,101 +1,71 @@
-@media (min-width: $mobile-width) {
-  .main-nav {
-    display: flex;
-    min-width: 320px;
-  }
-
-  .main-nav__logo-wrapper {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-  }
-
-  .main-nav__logo {
-    margin-right: 113px;
-    padding-top: 12px;
-    padding-left: 2px;
-  }
-
-  .main-nav__title {
-    display: none;
-  }
-
-  .main-nav__text {
-    display: none;
-  }
-
-  .main-nav__toggle {
-    position: relative;
-
-    padding-top: 12px;
-
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-
-      width: 37px;
-      height: 13px;
-
-      background-image: url("../img/icon-menu.svg");
-      background-repeat: no-repeat;
-    }
-  }
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1412px;
+  width: 100%;
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav__logo-icon {
-    width: 52px;
-    height: 52px;
-  }
+.main-nav__logo-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 34px;
+  width: 25.283%;
+}
 
-  .main-nav__logo-wrapper {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-  }
+.main-nav__logo {
+  margin-right: 17px;
+  padding-top: 0;
+  padding-left: 2px;
+}
 
-  .main-nav__logo {
-    margin-right: 15px;
-    padding-top: 20px;
-  }
+.main-nav__logo-title {
+  margin-right: 119px;
+}
 
-  .main-nav__logo-title {
-    display: flex;
-    flex-direction: column;
-    padding-top: 17px;
-    margin-right: 360px;
-    width: 135px;
-  }
+.main-nav__title {
+  margin: 0;
+  margin-bottom: -4px;
+  padding-top: 2px;
 
-  .main-nav__toggle {
-    padding-top: 5px;
-  }
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  color: #ffffff;
+}
 
-  .main-nav__title {
-    display: inline;
-    margin: 0;
+.main-nav__text {
+  margin: 0;
 
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 29px;
-    color: #ffffff;
-  }
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
+}
 
-  .main-nav__text {
-    display: inline;
+.main-nav__toggle {
+  position: relative;
 
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
+  padding-top: 18px;
 
-    color: #788891;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    width: 37px;
+    height: 13px;
+
+    background-image: url("../img/icon-menu.svg");
+    background-repeat: no-repeat;
   }
 }

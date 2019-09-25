@@ -1,36 +1,42 @@
-@media (min-width: $mobile-width) {
-  .confidentiality {
-    padding-top: 28px;
-  }
-
-  .confidentiality__text {
-    margin: 0;
-    margin-bottom: 20px;
-
-    font-size: 13px;
-    line-height: 24px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: #1b2d37;
-
-    opacity: 0.5;
-  }
+.confidentiality {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  width: 1412px;
 }
 
+.confidentiality__wrapper {
+  display: flex;
+}
 
-@media (min-width: $tablet-width) {
-  .confidentiality {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 23px;
-    width: 768px;
+.confidentiality__period {
+  margin: 0;
+  margin-right: 142px;
 
-    border-top: 1px solid rgba(98, 105, 98, 0.2);
-  }
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #1b2d37;
 
-  .confidentiality__text {
-    padding-right: 25px;
-    padding-left: 25px;
+  opacity: 0.5;
+}
+
+.confidentiality__text {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #1b2d37;
+
+  opacity: 0.5;
+
+  &--protect {
+    margin-right: 72px;
   }
 }

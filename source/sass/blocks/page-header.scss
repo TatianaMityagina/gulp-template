@@ -1,40 +1,26 @@
-@media (min-width: $mobile-width) {
-  .page-header {
-    position: relative;
-    z-index: -2;
+.page-header {
+  position: relative;
+  z-index: -2;
 
-    display: flex;
-    flex-direction: column;
-    min-width: 320px;
-    padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 275px;
 
-    background-color: #c4c4c4;
-    background-image: url("../img/fond-header-mobile.png");
+  background-color: #1b2d37;
+  background-image: url("../img/fond-header-desktop.png");
+  background-repeat: no-repeat;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 260px;
+    left: 800px;
+    z-index: -1;
+
+    width: 705px;
+    height: 515px;
+
+    background-image: url("../img/board-desktop.png");
     background-repeat: no-repeat;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 93px;
-      left: 25px;
-      z-index: -1;
-
-      width: 301px;
-      height: 220px;
-
-      background-image: url("../img/board-mobile.png");
-      background-repeat: no-repeat;
-    }
   }
 }
-
-@media (min-width: $tablet-width) {
-  .page-header {
-    padding-bottom: 162px;
-    width: 768px;
-
-    background-image: url("../img/fond-header-tablet.png");
-  }
-
-}
-

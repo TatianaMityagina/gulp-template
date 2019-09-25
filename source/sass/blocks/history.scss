@@ -1,83 +1,61 @@
-@media (min-width: $mobile-width) {
-  .history {
-    padding-top: 38px;
-    padding-bottom: 65px;
-  }
+.history {
+  position: relative;
 
-  .history__title {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 19px;
+  padding-top: 76px;
+  padding-left: 182px;
+  padding-bottom: 110px;
+  max-width: 1170px;
 
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 28px;
-    line-height: 140.62%;
-  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 80px;
+    left: -25px;
+    z-index: -1;
 
-  .history__text {
-    padding: 0;
-    padding-left: 2px;
-    margin: 0;
-    margin-bottom: 40px;
-    width: 290px;
+    width: 200px;
+    height: 325px;
 
-    &--second {
-      margin-bottom: 30px;
-    }
-  }
-
-  .history__button {
-    padding: 13px 0;
-    width: 181px;
-
-    font-size: 14px;
-    line-height: 16px;
-    color: #00b2ff;
-
-    border: 1px solid #00b2ff;
-    border-radius: 5px;
-    background-color: #ffffff;
+    background-image: url("../img/date-desktop.jpg");
+    background-repeat: no-repeat;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .history {
-    position: relative;
-    z-index: 20;
+.history__title {
+  z-index: 10;
 
-    padding-top: 28px;
-    padding-left: 210px;
-    padding-bottom: 85px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 19px;
 
-    &::before {
-      position: absolute;
-      content: "";
-      top: 25px;
-      left: 0;
-      z-index: -1;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 51px;
+}
 
-      width: 361.79px;
-      height: 380px;
+.history__text {
+  z-index: 10;
 
-      background-image: url("../img/date-tablet.jpg");
-      background-repeat: no-repeat;
-    }
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+
+  &--second {
+    margin-bottom: 38px;
   }
+}
 
-  .history__title {
-    font-size: 32px;
-    margin-bottom: 25px;
-  }
+.history__button {
+  padding: 14px 0;
+  width: 180px;
 
-  .history__text {
-    margin-bottom: 20px;
-    width: 535px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #00b2ff;
 
-    &--second {
-      width: 535px;
-      margin-bottom: 40px;
-    }
-  }
+  border: 1px solid #00b2ff;
+  border-radius: 5px;
+  background-color: #ffffff;
 }

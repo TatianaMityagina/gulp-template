@@ -1,93 +1,94 @@
-@media (min-width: $mobile-width) {
-  .service {
-    padding-top: 50px;
-    padding-bottom: 34px;
+.service {
+  padding-top: 90px;
+  padding-bottom: 80px;
 
-    background: #1b2d37;
+  background: #1b2d37;
+}
+
+.service__wrapper {
+  max-width: 1170px;
+}
+
+.service__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.service__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 1170px;
+
+  list-style: none;
+}
+
+.service__item {
+  margin-bottom: 30px;
+  width: 31.624%;
+}
+
+.service__link {
+  position: relative;
+
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 370px;
+  height: 620px;
+
+  text-decoration: none;
+
+  background-repeat: no-repeat;
+
+  &--production {
+    background-image: url("../img/production-desktop.png");
   }
 
-  .service__title {
-    width: 290px;
-    padding: 0;
-    padding-left: 10px;
-    margin: 0;
-    margin-bottom: 42px;
-
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 140.62%;
-    color: #ffffff;
+  &--installation {
+    background-image: url("../img/installation-desktop.png");
   }
 
-  .service__list {
-    padding: 0;
-    margin: 0;
-
-    list-style: none;
+  &--component {
+    background-image: url("../img/component-desktop.png");
   }
+}
 
-  .service__item {
-    margin-bottom: 30px;
+.service__text {
+  padding: 0;
+  padding-top: 50px;
+  padding-left: 45px;
+  padding-right: 20px;
+  margin: 0;
+  width: 250px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+
+  &--component {
+    width: 220px;
   }
+}
 
-  .service__link {
-    position: relative;
+.service__button {
+  border: none;
+  background: transparent;
 
-    display: block;
-    padding: 0;
-    margin: 0;
-
-    text-decoration: none;
-
-    &--production {
-      width: 290px;
-      height: 256px;
-
-      background-image: url("../img/production-mobile.png");
-      background-repeat: no-repeat;
-    }
-
-    &--installation {
-      width: 290px;
-      height: 256px;
-
-      background-image: url("../img/installation-mobile.png");
-      background-repeat: no-repeat;
-    }
-
-    &--component {
-      width: 290px;
-      height: 256px;
-
-      background-image: url("../img/component-mobile.png");
-      background-repeat: no-repeat;
-    }
-  }
-
-  .service__text {
-    padding: 0;
-    padding-top: 20px;
-    padding-left: 35px;
-    padding-right: 20px;
-    margin: 0;
-    width: 200px;
-
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    color: #ffffff;
-
-    &--component {
-      padding-top: 30px;
-    }
-  }
-
-  .service__button {
-    position: relative;
+  &::before {
     position: absolute;
+    content: "";
 
     bottom: 0;
     right: 0;
@@ -97,79 +98,18 @@
 
     background: #00b2ff;
     border: none;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 27px;
-      left: 28px;
-
-      width: 8px;
-      height: 8px;
-
-      background-image: url("../img/icon-vector.svg");
-      background-repeat: no-repeat;
-    }
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .service {
-    padding-top: 50px;
-    padding-bottom: 30px;
   }
 
-  .service__title {
-    width: 620px;
-    padding-left: 0;
-    margin-bottom: 50px;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 27px;
+    right: 25px;
 
-    font-size: 32px;
-  }
+    width: 8px;
+    height: 8px;
 
-  .service__item {
-    margin-bottom: 48px;
-
-    &--installation {
-      margin-bottom: 46px;
-    }
-  }
-
-  .service__link {
-    &--production {
-      width: 720px;
-      height: 256px;
-
-      background-image: url("../img/production-tablet.png");
-    }
-
-    &--installation {
-      width: 720px;
-      height: 256px;
-
-      background-image: url("../img/installation-tablet.png");
-    }
-
-    &--component {
-      width: 720px;
-      height: 256px;
-
-      background-image: url("../img/component-tablet.png");
-    }
-  }
-
-  .service__text {
-    padding-top: 40px;
-    padding-left: 45px;
-    width: 200px;
-
-    &--installation {
-      width: 230px;
-    }
-
-    &--component {
-      padding-top: 50px;
-      width: 230px;
-    }
+    background-image: url("../img/icon-vector.svg");
+    background-repeat: no-repeat;
   }
 }

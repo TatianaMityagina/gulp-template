@@ -1,78 +1,55 @@
-@media (min-width: $mobile-width) {
-  .navigation {
-    padding-top: 29px;
-    padding-bottom: 27px;
+.navigation {
+  padding-top: 25px;
+  padding-bottom: 27px;
+  width: 520px;
+}
 
-    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
-  }
+.navigation__title {
+  position: relative;
 
-  .navigation__title {
-    position: relative;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
 
-    padding: 0;
-    margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1b2d37;
 
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 16px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #1b2d37;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 272px;
 
-    &::after {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 272px;
+    width: 16px;
+    height: 16px;
 
-      width: 16px;
-      height: 16px;
-
-      background-image: url("../img/icon-plus.svg");
-    }
-  }
-
-  .navigation__list {
-    display: none;
+    background-image: url("../img/icon-plus.svg");
   }
 }
 
-@media (min-width: $tablet-width) {
-  .navigation {
-    padding-top: 38px;
-    padding-bottom: 35px;
-    margin-right: 90px;
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  width: 520px;
 
-    border: none;
-  }
-
-  .navigation__title {
-    padding-left: 2px;
-    margin-bottom: 25px;
-
-    &::after {
-      display: none;
-    }
-  }
-
-  .navigation__list {
-    display: block;
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-  }
-
-  .navigation__link {
-    font-size: 15px;
-    line-height: 25px;
-    text-decoration: none;
-    color: #1b2d37;
-
-    opacity: 0.5;
-  }
+  list-style: none;
 }
 
-@media (min-width: $desktop-width) {
+.navigation__item {
+  width: 260px;
+}
+
+.navigation__link {
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #1b2d37;
+  opacity: 0.5;
 }

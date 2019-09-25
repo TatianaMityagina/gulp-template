@@ -8,7 +8,6 @@
   <link rel="preload" href="fonts/pt-mono.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/robotoregular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto500.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -22,7 +21,7 @@
     <nav class="main-nav container">
       <div class="main-nav__logo-wrapper">
         <a class="main-nav__logo" href="#">
-          <svg class="main-nav__logo-icon" width="38" height="38">
+          <svg class="main-nav__logo-icon" width="52" height="52">
             <use xlink:href="#icon-logo-mobile"></use>
           </svg>
         </a>
@@ -34,24 +33,24 @@
       </div>
 
       <ul class="user-list">
-        <li class="user-list__item">
+        <li class="user-list__item user-list__item--envelope">
           <a class="user-list__link" href="#">
-            <svg class="user-list__icon" width="26" height="19">
+            <svg class="user-list__icon" width="19" height="14">
               <use xlink:href="#icon-envelope"></use>
             </svg>
+            <span class="user-list__text">info@sd.ru</span>
           </a>
-          <span class="user-list__text">info@sd.ru</span>
         </li>
-        <li class="user-list__item">
+        <li class="user-list__item user-list__item--phone">
           <a class="user-list__link" href="#">
-            <svg class="user-list__icon" width="25" height="24">
+            <svg class="user-list__icon user-list__icon--phone" width="18" height="18">
               <use xlink:href="#icon-phone"></use>
             </svg>
+            <span class="user-list__text">+7 (495) 000 52 52</span>
           </a>
-          <span class="user-list__text">+7 (495) 000 52 52</span>
         </li>
         <li class="user-list__item">
-          <a class="user-list__link user-list__link--call" href="#">
+          <a class="user-list__link user-list__link--call button" href="#">
             Заказать звонок
           </a>
         </li>
@@ -65,11 +64,12 @@
       </p>
       <button class="promo__button button">Бесплатная консультация</button>
       <button class="promo__button-descktop button">Получить бесплатную консультацию</button>
+      <a class="promo__scroll" href="#">Скролл вниз</a>
     </div>
   </header>
 
   <main class="page-main">
-    <section class="advantages container">
+    <section class="advantages">
       <ul class="advantages__list">
         <li class="advantages__item">
           <svg class="advantages__icon" width="30" height="37">
@@ -95,7 +95,7 @@
           </p>
         </li>
         <li class="advantages__item advantages__item--detective">
-          <svg class="advantages__icon advantages__icon-detective" width="31" height="27">
+          <svg class="advantages__icon advantages__icon-detective" width="36" height="31">
             <use xlink:href="#icon-detective"></use>
           </svg>
           <h3 class="advantages__title advantages__title--detective">Полная конфиденциальность</h3>
@@ -126,13 +126,15 @@
       <p class="history__text history__text--second">
         Наши поставщики - мировые производители электронных компонентов:
         OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие
-        Service Devices применяются на предприятиях Российских Железных Дорог..
+        Service Devices применяются на предприятиях Российских Железных Дорог
+        (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
+        Среди наших клиентов крупнейшие Производители светотехники России.
       </p>
       <button class="history__button button">Подробнее</button>
     </section>
 
     <section class="service">
-      <div class="container">
+      <div class="service__wrapper container">
         <h2 class="service__title" id="product">Service Device предлагает следующие товары и услуги</h2>
         <ul class="service__list">
           <li class="service__item">
@@ -158,12 +160,12 @@
     </section>
 
     <form class="form-question" action="https://echo.htmlacademy.ru" method="post">
-      <div class="container">
+      <div class="form-question__wrapper container">
         <h2 class="form-question__title">Остались вопросы? Задайте их нам!</h2>
         <p class="form-question__text">Мы проконсультируем Вас бесплатно</p>
 
         <ul class="form-question__list">
-          <li class="form-question__item">
+          <li class="form-question__item form-question__item--firstname">
             <label class="form-question__label visually-hidden" for="firstname">Имя</label>
             <input class="form-question__input-text" type="text" id="firstname" name="firstname" placeholder="Имя">
           </li>
@@ -186,87 +188,90 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__top">
-      <div class="page-footer__logo-wrapper">
-        <a class="page-footer__logo" href="#">
-          <svg class="page-footer__logo-icon" width="52" height="52">
-            <use xlink:href="#icon-logo-mobile"></use>
-          </svg>
-        </a>
+    <div class="page-footer__wrapper container">
+      <div class="page-footer__top">
+        <div class="page-footer__logo-wrapper">
+          <a class="page-footer__logo" href="#">
+            <svg class="page-footer__logo-icon" width="52" height="52">
+              <use xlink:href="#icon-logo-mobile"></use>
+            </svg>
+          </a>
 
-        <div class="page-footer__logo-title">
-          <h2 class="page-footer__title">Service Device</h2>
-          <span class="page-footer__text">умные технологии</span>
+          <div class="page-footer__logo-title">
+            <h2 class="page-footer__title">Service Device</h2>
+            <span class="page-footer__text">умные технологии</span>
+          </div>
+        </div>
+
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Фейсбуке">
+              <svg class="social__link-icon" width="27" height="27">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--ok" href="https://www.facebook.com/htmlacademy" aria-label="Мы в одноклассниках">
+              <svg class="social__link-icon" width="27" height="27">
+                <use xlink:href="#icon-ok"></use>
+              </svg>
+              </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://twitter.com/htmlacademy" aria-label="Мы в контакте">
+              <svg class="social__link-icon" width="27" height="27">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__navigation navigation">
+        <h3 class="navigation__title">Разделы сайта</h3>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#history">О компании</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#product">Продукты</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#production">Производство печатных плат</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#installation">Монтаж печатных плат</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#component">Комплектующие</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Доставка</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__contacts contacts">
+        <h3 class="contacts__title">Наш офис </h3>
+
+        <div class="contacts__wrapper">
+          <p class="contacts__address">г. Мытищи, Олимпийский проспект, д.10</p>
+          <a class="contacts__phone" href="tel:+74955894050">+7 (495) 589-40-50</a><br>
+          <a class="contacts__phone" href="tel:+79250038767">+7 (925) 003-87-67</a><br>
+          <a class="contacts__phone" href="tel:+792692608079">+7 (926) 926-080-79</a>
         </div>
       </div>
-
-      <p class="page-footer__period">1999-2018 SD Service Devices</p>
-
-      <ul class="social">
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Фейсбуке">
-            <svg class="social__link-icon" width="27" height="27">
-              <use xlink:href="#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--ok" href="https://www.facebook.com/htmlacademy" aria-label="Мы в одноклассниках">
-            <svg class="social__link-icon" width="27" height="27">
-              <use xlink:href="#icon-ok"></use>
-            </svg>
-            </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="https://twitter.com/htmlacademy" aria-label="Мы в контакте">
-            <svg class="social__link-icon" width="27" height="27">
-              <use xlink:href="#icon-vk"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
     </div>
-
-    <div class="page-footer__navigation navigation container">
-      <h3 class="navigation__title">Разделы сайта</h3>
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="#history">О компании</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#product">Продукты</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#production">Производство печатных плат</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#installation">Монтаж печатных плат</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#component">Комплектующие</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Доставка</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="page-footer__contacts contacts container">
-      <h3 class="contacts__title">Наш офис </h3>
-
-      <div class="contacts__wrapper">
-        <p class="contacts__address">г. Мытищи, Олимпийский проспект, д.10</p>
-        <a class="contacts__phone" href="tel:+74955894050">+7 (495) 589-40-50</a><br>
-        <a class="contacts__phone" href="tel:+79250038767">+7 (925) 003-87-67</a><br>
-        <a class="contacts__phone" href="tel:+792692608079">+7 (926) 926-080-79</a>
-      </div>
-    </div>
-
     <div class="page-footer__confidentiality confidentiality">
-      <p class="confidentiality__text">Условия конфиденциальности</p>
+      <div class="confidentiality__wrapper">
+        <p class="confidentiality__text confidentiality__text--protect ">Все права защищены</p>
+        <p class="confidentiality__period">1999-2018 SD Service Devices</p>
+        <p class="confidentiality__text confidentiality__text--privacy">Условия конфиденциальности</p>
+      </div>
       <p class="confidentiality__text">Developed by wow studio</p>
     </div>
   </footer>

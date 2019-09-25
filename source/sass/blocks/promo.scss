@@ -1,94 +1,73 @@
-@media (min-width: $mobile-width) {
-  .promo {
-    padding-top: 218px;
-  }
-  .promo__title {
-    z-index: 10;
+.promo {
+  padding-top: 225px;
+  max-width: 1412px;
+  width: 100%;
+}
 
-    width: 280px;
-    margin: 0;
-    margin-bottom: 28px;
-    padding: 0;
+.promo__title {
+  z-index: 10;
 
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 47px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
 
-  .promo__description {
-    position: relative;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 
-    margin: 0;
-    margin-bottom: 42px;
-    padding: 0;
-    padding-left: 50px;
-    width: 280px;
+.promo__description {
+  position: relative;
 
-    line-height: 156.8%;
-    color: #ffffff;
+  margin: 0;
+  margin-bottom: 44px;
+  padding: 0;
+  padding-left: 98px;
+  padding-right: 15px;
+  width: 800px;
 
-    &::before {
-      position: absolute;
-      content: "";
-      top: 14px;
-      left: 2px;
+  font-size: 22px;
+  line-height: 34px;
+  color: #ffffff;
 
-      width: 33px;
-      height: 2px;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 16px;
+    left: 3px;
 
-      background-color: #ffffff;
-    }
-  }
+    width: 66px;
+    height: 2px;
 
-  .promo__button {
-    width: 290px;
-
-    border: none;
-  }
-
-  .promo__button-descktop {
-    display: none;
+    background-color: #ffffff;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .promo {
-    padding-top: 112px;
-  }
+.promo__button {
+  display: none;
+}
 
-  .promo__title {
-    padding-left: 62px;
+.promo__button-descktop {
+  margin-left: 98px;
+  width: 407px;
 
-    font-size: 60px;
-    line-height: 70px;
-  }
+  border: none;
+}
 
-  .promo__description {
-    padding-left: 115px;
-    width: 450px;
-    margin-bottom: 55px;
+.promo__scroll {
+  position: absolute;
+  bottom: 128px;
+  left: -20px;
 
-    font-size: 18px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
 
-    &::before {
-      top: 14px;
-      left: 65px;
-    }
-  }
-
-  .promo__button {
-    display: none;
-  }
-
-  .promo__button-descktop {
-    display: block;
-    margin-left: 114px;
-    width: 380px;
-
-    border: none;
-  }
+  opacity: 0.5;
+  transform: rotate(-90deg);
 }
