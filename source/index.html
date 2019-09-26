@@ -20,15 +20,12 @@
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__logo-wrapper">
-        <a class="main-nav__logo" href="#">
-          <svg class="main-nav__logo-icon" width="52" height="52">
+        <a class="main-nav__logo-link" href="#">
+          <svg class="main-nav__logo-icon" width="38" height="38">
             <use xlink:href="#icon-logo-mobile"></use>
           </svg>
+          <img class="main-nav__logo-image" src="../img/logo-header.svg" width="202" height="52" alt="Логотип компании">
         </a>
-        <div class="main-nav__logo-title">
-          <h1 class="main-nav__title">Smart Device</h1>
-          <span class="main-nav__text">умные технологии</span>
-        </div>
         <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
       </div>
 
@@ -87,7 +84,7 @@
         </li>
         <li class="advantages__item">
           <a href="#">
-            <svg width="32" height="33">
+            <svg width="35" height="35">
               <use xlink:href="#icon-hired"></use>
             </svg>
             <h3>Крупные поставщики</h3>
@@ -111,7 +108,7 @@
         </li>
         <li class="advantages__item advantages__item--tag">
           <a href="#">
-            <svg width="33" height="33">
+            <svg width="35" height="35">
               <use xlink:href="#icon-tag"></use>
             </svg>
             <h3>Персонализация стоимости</h3>
@@ -158,7 +155,7 @@
           <li class="service__item service__item--installation">
             <a class="service__link service__link--installation" href="#" id="installation">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/installation-mobile@1x.png 1x, img/installation-m@2x.png 2x">
+                <source media="(max-width: 767px)" srcset="img/installation-mobile@1x.png 1x, img/installation-mobile@2x.png 2x">
                 <source media="(max-width: 1023px)" srcset="img/installation-tablet@1x.png 1x, img/installation-tablet@2x.png 2x">
                 <img class="service__image" src="img/installation-desktop@1x.png 1x" srcset="img/installation-desktop@2x.png 2x" width="370" height="620" alt="Монтаж печатных плат">
               </picture>
@@ -212,7 +209,9 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__top">
-        <img src="../img/logo-footer.svg" width="216" height="52" alt="Логотип компании">
+        <a class="page-footer__logo-link" href="#">
+          <img src="../img/logo-footer.svg" width="216" height="52" alt="Логотип компании">
+        </a>
 
         <ul class="social">
           <li class="social__item">
@@ -279,7 +278,7 @@
     </div>
     <div class="page-footer__confidentiality confidentiality">
       <div class="confidentiality__wrapper">
-        <p class="confidentiality__text confidentiality__text--protect ">Все права защищены</p>
+        <p class="confidentiality__text confidentiality__text--protect">Все права защищены</p>
         <p class="confidentiality__period">1999-2018 SD Service Devices</p>
         <p class="confidentiality__text confidentiality__text--privacy">Условия конфиденциальности</p>
       </div>

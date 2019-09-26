@@ -72,7 +72,7 @@
   .history {
     padding-top: 10px;
     padding-left: 210px;
-    padding-bottom: 108px;
+    padding-bottom: 61px;
 
     &::before {
       top: 8px;
@@ -112,5 +112,38 @@
     border: 1px solid #00b2ff;
     border-radius: 5px;
     background-color: #ffffff;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .history {
+    padding-left: 15px;
+    width: 290px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .history h2 {
+    margin-bottom: 20px;
+
+    font-size: 28px;
+  }
+
+  .history p {
+    padding-left: 2px;
+    margin-bottom: 40px;
+    width: 290px;
+  }
+
+  .history span {
+    white-space: nowrap;
+  }
+
+  .history a {
+    margin-top: -10px;
+    padding: 13px 0;
+    width: 180px;
   }
 }

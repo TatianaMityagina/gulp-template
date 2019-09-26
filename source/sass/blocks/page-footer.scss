@@ -1,5 +1,7 @@
 .page-footer {
   padding-top: 40px;
+  max-width: 1412px;
+  margin: 0 auto;
 }
 
 .page-footer__wrapper {
@@ -14,9 +16,9 @@
     position: absolute;
     content: "";
     bottom: -2px;
-    left: -20px;
+    left: -50%;
 
-    width: 2000px;
+    width: 3000px;
     height: 1px;
 
     background-color: rgba(98, 105, 98, 0.2);
@@ -29,40 +31,89 @@
   width: 288px;
 }
 
-.page-footer__logo-wrapper {
-  display: flex;
-  align-items: center;
-  padding-top: 15px;
-  margin-bottom: 35px;
+.page-footer__logo-link {
+  padding-top: 25px;
+  margin-bottom: 12px;
 }
 
-.page-footer__logo-icon {
-  margin-right: 16px;
+@media (max-width: $tablet-width) {
+  .page-footer {
+    padding-top: 0;
+    max-width: 720px;
+  }
+
+  .page-footer__wrapper {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+    max-width: 720px;
+  }
+
+  .page-footer__top {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    max-width: 720px;
+    width: 100%;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: -100%;
+
+      width: 2000px;
+      height: 1px;
+
+      background-color: rgba(98, 105, 98, 0.2);
+    }
+  }
+
+  .page-footer__logo-link {
+    padding-top: 20px;
+  }
 }
 
-.page-footer__title {
-  margin: 0;
-  padding-top: 2px;
-  margin-bottom: -4px;
+@media (max-width: $mobile-width) {
+  .page-footer {
+    width: 290px;
+  }
 
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 29px;
-  color: #203c42;
-}
+  .page-footer__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0;
+    width: 290px;
 
-.page-footer__text {
-  margin: 0;
+    &::after {
+      display: none;
+    }
+  }
 
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: #788891;
-}
+  .page-footer__top {
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-top: 45px;
 
-.page-footer__period {
-  font-size: 13px;
-  line-height: 24px;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: -100%;
+
+      width: 2000px;
+      height: 1px;
+
+      background-color: rgba(98, 105, 98, 0.2);
+    }
+  }
+
+  .page-footer__logo-link {
+    padding-top: 0;
+    margin-bottom: 72px;
+  }
 }

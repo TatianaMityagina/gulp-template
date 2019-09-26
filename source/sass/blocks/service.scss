@@ -67,8 +67,9 @@
 .service__button {
   border: none;
   background: transparent;
+  outline: none;
 
-  &::before {
+  &::after {
     position: absolute;
     content: "";
 
@@ -78,27 +79,14 @@
     width: 63px;
     height: 63px;
 
-    background: #00b2ff;
-    border: none;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 56px;
-    right: 25px;
-
-    width: 8px;
-    height: 8px;
-
-    background-image: url("../img/icon-vector.svg");
+    background-image: url("../img/icon-button.svg");
     background-repeat: no-repeat;
   }
 }
 
 @media (max-width: $tablet-width) {
   .service {
-    padding-top: 50px;
+    padding-top: 52px;
     padding-bottom: 17px;
   }
 
@@ -107,7 +95,7 @@
   }
 
   .service__title {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
     width: 615px;
 
     font-size: 32px;
@@ -132,9 +120,60 @@
 
   .service__text {
     padding-top: 40px;
+    padding-left: 43px;
 
     &--component {
       padding-top: 50px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .service {
+    padding-top: 52px;
+    padding-bottom: 18px;
+  }
+
+  .service__wrapper {
+    width: 320px;
+  }
+
+  .service__title {
+    margin-bottom: 40px;
+    padding-left: 10px;
+    width: 300px;
+
+    font-size: 28px;
+  }
+
+  .service__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service__item {
+    margin-bottom: 2px;
+  }
+
+  .service__image {
+    width: 290px;
+    height: 256px;
+  }
+
+  .service__text {
+    padding-top: 20px;
+    padding-left: 35px;
+    width: 220px;
+
+    &--component {
+      padding-top: 30px;
+    }
+  }
+
+  .service__button {
+    &::after {
+      top: 193px;
+      left: 227px;
     }
   }
 }

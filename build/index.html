@@ -14,7 +14,10 @@
 <body>
 
   <div style="display:none">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-check" viewbox="0 0 10 7">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-button" viewbox="0 0 63 63">
+<rect width="63" height="63" fill="#00B2FF"></rect>
+<path d="M29 35.5L33 31.5L29 27.5" stroke="white" stroke-linejoin="round"></path>
+</symbol><symbol id="icon-check" viewbox="0 0 10 7">
 <path d="M1 2.66667L4.2 6L9 1" stroke="white"></path>
 </symbol><symbol id="icon-close" viewbox="0 0 17 17">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146522 0.853553C-0.04874 0.658291 -0.04874 0.341709 0.146522 0.146447C0.341784 -0.0488155 0.658367 -0.0488156 0.853629 0.146447L8.27821 7.57103L15.7028 0.14645C15.8981 -0.0488124 16.2146 -0.0488125 16.4099 0.14645C16.6052 0.341712 16.6052 0.658294 16.4099 0.853556L8.98532 8.27814L16.41 15.7028C16.6052 15.8981 16.6052 16.2146 16.41 16.4099C16.2147 16.6052 15.8981 16.6052 15.7029 16.4099L8.27821 8.98525L0.853553 16.4099C0.658291 16.6052 0.341709 16.6052 0.146447 16.4099C-0.0488155 16.2146 -0.0488156 15.8981 0.146447 15.7028L7.57111 8.27814L0.146522 0.853553Z" fill="white"></path>
@@ -79,15 +82,12 @@
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__logo-wrapper">
-        <a class="main-nav__logo" href="#">
-          <svg class="main-nav__logo-icon" width="52" height="52">
+        <a class="main-nav__logo-link" href="#">
+          <svg class="main-nav__logo-icon" width="38" height="38">
             <use xlink:href="#icon-logo-mobile"></use>
           </svg>
+          <img class="main-nav__logo-image" src="../img/logo-header.svg" width="202" height="52" alt="Логотип компании">
         </a>
-        <div class="main-nav__logo-title">
-          <h1 class="main-nav__title">Smart Device</h1>
-          <span class="main-nav__text">умные технологии</span>
-        </div>
         <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
       </div>
 
@@ -146,7 +146,7 @@
         </li>
         <li class="advantages__item">
           <a href="#">
-            <svg width="32" height="33">
+            <svg width="35" height="35">
               <use xlink:href="#icon-hired"></use>
             </svg>
             <h3>Крупные поставщики</h3>
@@ -170,7 +170,7 @@
         </li>
         <li class="advantages__item advantages__item--tag">
           <a href="#">
-            <svg width="33" height="33">
+            <svg width="35" height="35">
               <use xlink:href="#icon-tag"></use>
             </svg>
             <h3>Персонализация стоимости</h3>
@@ -217,7 +217,7 @@
           <li class="service__item service__item--installation">
             <a class="service__link service__link--installation" href="#" id="installation">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/installation-mobile@1x.png 1x, img/installation-m@2x.png 2x">
+                <source media="(max-width: 767px)" srcset="img/installation-mobile@1x.png 1x, img/installation-mobile@2x.png 2x">
                 <source media="(max-width: 1023px)" srcset="img/installation-tablet@1x.png 1x, img/installation-tablet@2x.png 2x">
                 <img class="service__image" src="img/installation-desktop@1x.png 1x" srcset="img/installation-desktop@2x.png 2x" width="370" height="620" alt="Монтаж печатных плат">
               </picture>
@@ -271,7 +271,9 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__top">
-        <img src="../img/logo-footer.svg" width="216" height="52" alt="Логотип компании">
+        <a class="page-footer__logo-link" href="#">
+          <img src="../img/logo-footer.svg" width="216" height="52" alt="Логотип компании">
+        </a>
 
         <ul class="social">
           <li class="social__item">
@@ -338,7 +340,7 @@
     </div>
     <div class="page-footer__confidentiality confidentiality">
       <div class="confidentiality__wrapper">
-        <p class="confidentiality__text confidentiality__text--protect ">Все права защищены</p>
+        <p class="confidentiality__text confidentiality__text--protect">Все права защищены</p>
         <p class="confidentiality__period">1999-2018 SD Service Devices</p>
         <p class="confidentiality__text confidentiality__text--privacy">Условия конфиденциальности</p>
       </div>

@@ -2,8 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
-  padding-top: 18px;
+  padding-top: 15px;
   padding-bottom: 20px;
   width: 1412px;
 }
@@ -38,5 +37,51 @@
 
   &--protect {
     margin-right: 72px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .confidentiality {
+    position: relative;
+
+    padding-top: 22px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .confidentiality__period {
+    position: absolute;
+    bottom: 392px;
+    left: 302px;
+  }
+
+  .confidentiality__text {
+    &--protect {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .confidentiality {
+    position: relative;
+
+    flex-direction: column;
+
+    padding-top: 28px;
+    padding-bottom: 20px;
+    width: 100%;
+    border: none;
+  }
+
+  .confidentiality__wrapper {
+    margin-bottom: 20px;
+  }
+
+  .confidentiality__period {
+    position: absolute;
+    bottom: 530px;
+    width: 250px;
+    left: 30px;
   }
 }

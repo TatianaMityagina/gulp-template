@@ -12,6 +12,10 @@
   background-position-x: -240px;
   background-repeat: no-repeat;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/main-bg-desktop@2x.png");
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -24,5 +28,72 @@
 
     background-image: url("../img/main-bg2-desktop@1x.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bg2-desktop@2x.png");
+      background-size: auto 515px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    padding-bottom: 165px;
+
+    background-image: url("../img/main-bg-tablet@1x.png");
+    background-size: auto auto;
+    background-position-y: -5px;
+    background-position-x: -372px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bg-tablet@2x.png");
+      background-size: auto 690px;
+    }
+
+    &::after {
+      top: 115px;
+      left: 510px;
+
+      width: 465px;
+      height: 340px;
+
+      background-image: url("../img/main-bg2-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/main-bg2-tablet@2x.png");
+        background-size: auto 340px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-header {
+    padding-bottom: 70px;
+
+    background-image: url("../img/main-bg-mobile@1x.png");
+    background-size: auto auto;
+    background-position-y: -15px;
+    background-position-x: -625px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bg-mobile@2x.png");
+      background-size: auto 664px;
+    }
+
+    &::after {
+      top: 90px;
+      left: 25px;
+
+      width: 301px;
+      height: 220px;
+
+      background-image: url("../img/main-bg2-mobile@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/main-bg2-mobile@2x.png");
+        background-size: auto 220px;
+      }
+    }
   }
 }
