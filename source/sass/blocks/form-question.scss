@@ -2,7 +2,16 @@
   padding-top: 94px;
   padding-bottom: 84px;
 
-  background: #00b2ff;
+  background-color: #00b2ff;
+  background-image: url("../img/paper-airplane@1x.png");
+  background-position-y: -58px;
+  background-position-x: -65px;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/paper-airplane@2x.png");
+    background-size: auto 764px;
+  }
 }
 
 .form-question__wrapper {
@@ -10,19 +19,6 @@
 
   max-width: 1170px;
   padding-left: 598px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: -150px;
-    left: -375px;
-
-    width: 1000px;
-    height: 1000px;
-
-    background-image: url("../img/paper-airplane@1x.png");
-    background-repeat: no-repeat;
-  }
 }
 
 .form-question__title {
@@ -138,7 +134,7 @@
     position: absolute;
     content: "";
     top: 12px;
-    left: 6px;
+    left: 8px;
 
     width: 10px;
     height: 8px;

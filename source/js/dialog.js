@@ -5,7 +5,7 @@ var ENTER_KEYCODE = 13;
 var setup = document.querySelector('.feedback');
 var overlay = document.querySelector('.overlay');
 var setupOpen = document.querySelector('.user-list__link--call');
-var setupClose = setup.querySelector('.feedback-close');
+var setupClose = setup.querySelector('.feedback__close');
 var setupUserName = setup.querySelector('.feedback__input-text--firstname');
 var setupUserNameFocus = false;
 

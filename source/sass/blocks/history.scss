@@ -9,16 +9,22 @@
   &::before {
     position: absolute;
     content: "";
-    top: 62px;
+    top: 58px;
     left: -29px;
     z-index: -1;
 
-    width: 200px;
-    height: 325px;
+    width: 323px;
+    height: 210px;
 
     background-image: url("../img/2005@1x.png");
-    background-size: 75%;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      height: 420px;
+
+      background-image: url("../img/2005@2x.png");
+      background-size: 210px 323px;
+    }
   }
 }
 
@@ -76,9 +82,12 @@
 
     &::before {
       top: 8px;
-      left: -8px;
+      left: 0;
 
-      background-size: auto auto;
+      width: 462px;
+      height: 500px;
+
+      background-image: url("../img/2005-tablet@1x.png");
     }
   }
 
