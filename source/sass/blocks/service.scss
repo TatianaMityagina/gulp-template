@@ -1,6 +1,6 @@
 .service {
   padding-top: 90px;
-  padding-bottom: 53px;
+  padding-bottom: 74px;
 
   background: #1b2d37;
 }
@@ -29,6 +29,20 @@
   margin-bottom: 30px;
   margin-right: 2.564%;
   width: 100%;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    bottom: 7px;
+    right: 0;
+
+    width: 63px;
+    height: 63px;
+
+    background-image: url("../img/icon-button.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .service__link {
@@ -58,35 +72,17 @@
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
-
-  &--component {
-    width: 220px;
-  }
 }
 
 .service__button {
   border: none;
   background: transparent;
   outline: none;
-
-  &::after {
-    position: absolute;
-    content: "";
-
-    bottom: 28px;
-    right: 0;
-
-    width: 63px;
-    height: 63px;
-
-    background-image: url("../img/icon-button.svg");
-    background-repeat: no-repeat;
-  }
 }
 
 @media (max-width: $tablet-width) {
   .service {
-    padding-top: 52px;
+    padding-top: 50px;
     padding-bottom: 17px;
   }
 
@@ -108,7 +104,7 @@
   }
 
   .service__item {
-    margin-bottom: 18px;
+    margin-bottom: 40px;
     margin-right: 0;
     width: 100%;
   }
@@ -121,17 +117,13 @@
   .service__text {
     padding-top: 40px;
     padding-left: 43px;
-
-    &--component {
-      padding-top: 50px;
-    }
   }
 }
 
 @media (max-width: $mobile-width) {
   .service {
     padding-top: 52px;
-    padding-bottom: 18px;
+    padding-bottom: 15px;
   }
 
   .service__wrapper {
@@ -152,7 +144,7 @@
   }
 
   .service__item {
-    margin-bottom: 2px;
+    margin-bottom: 25px;
   }
 
   .service__image {

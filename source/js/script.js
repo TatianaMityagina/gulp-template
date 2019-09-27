@@ -13,3 +13,12 @@ headerToggle.addEventListener('click', function () {
     pageHeader.classList.remove('page-header--opened');
   }
 });
+
+$(document).ready(function () {
+  $('a[href^="#"]').click(function () {
+    var target = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 500);
+  });
+});

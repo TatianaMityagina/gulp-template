@@ -1,15 +1,16 @@
 .history {
   position: relative;
 
-  padding-top: 60px;
+  padding-top: 58px;
   padding-left: 180px;
-  padding-bottom: 108px;
+  padding-right: 10px;
+  padding-bottom: 110px;
   max-width: 1170px;
 
   &::before {
     position: absolute;
     content: "";
-    top: 58px;
+    top: 55px;
     left: -29px;
     z-index: -1;
 
@@ -48,7 +49,6 @@
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
-  width: 980px;
 }
 
 .history span {
@@ -78,14 +78,15 @@
   .history {
     padding-top: 10px;
     padding-left: 210px;
-    padding-bottom: 61px;
+    padding-bottom: 63px;
 
     &::before {
       top: 8px;
       left: 0;
+      z-index: 1;
 
-      width: 462px;
-      height: 500px;
+      width: 244px;
+      height: 352px;
 
       background-image: url("../img/2005-tablet@1x.png");
     }
@@ -100,8 +101,8 @@
 
   .history p {
     padding-left: 2px;
-    margin-bottom: 22px;
-    width: 530px;
+    padding-right: 20px;
+    margin-bottom: 20px;
   }
 
   .history span {
@@ -127,7 +128,8 @@
 @media (max-width: $mobile-width) {
   .history {
     padding-left: 15px;
-    width: 290px;
+    padding-bottom: 65px;
+    width: 320px;
 
     &::before {
       display: none;
@@ -143,7 +145,7 @@
   .history p {
     padding-left: 2px;
     margin-bottom: 40px;
-    width: 290px;
+    padding-right: 0;
   }
 
   .history span {

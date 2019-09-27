@@ -1,0 +1,133 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 40;
+
+  width: 490px;
+  height: 605px;
+
+  background-color: #00b2ff;
+
+  transform: translate(-50%, -50%);
+}
+
+.modal__wrapper {
+  width: 412px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 140.62%;
+  color: #ffffff;
+}
+
+.modal__text {
+  margin: 0;
+  margin-bottom: 32px;
+  width: 380px;
+
+  color: #ffffff;
+}
+
+.modal input {
+  padding-top: 16px;
+  padding-bottom: 18px;
+  padding-left: 25px;
+  margin-bottom: 30px;
+  width: 411px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+}
+
+.modal textarea {
+  padding-top: 13px;
+  padding-bottom: 56px;
+  padding-left: 25px;
+  margin-bottom: 24px;
+  width: 411px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+}
+
+.modal input::placeholder,
+.modal textarea::placeholder {
+  color: #ffffff;
+}
+
+.modal button {
+  display: block;
+  padding: 14px 0;
+  margin-bottom: 25px;
+  width: 100%;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+
+  background: #00b2ff;
+  border-radius: 5px;
+  border-color: #ffffff;
+}
+
+.modal label {
+  display: block;
+  padding-left: 50px;
+  padding-right: 20px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+
+  transform: translateY(-6px);
+
+  &::before {
+    position: relative;
+    content: "";
+    top: 17px;
+    left: -50px;
+
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid white;
+  }
+}
+
+.modal input:checked + .modal label::before {
+  background-image: url("../img/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-size: 9px 9px;
+}
+
+.modal__close {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 20px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/icon-close.svg");
+  cursor: pointer;
+}

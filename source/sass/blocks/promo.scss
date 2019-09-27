@@ -49,13 +49,12 @@
   }
 }
 
-.promo__button {
-  display: none;
-}
-
 .promo__button-descktop {
+  display: block;
   margin-left: 96px;
   width: 407px;
+
+  text-decoration: none;
 
   border: none;
 }

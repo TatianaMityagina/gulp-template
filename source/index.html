@@ -10,6 +10,7 @@
   <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto500.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -20,18 +21,20 @@
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__logo-wrapper">
-        <a class="main-nav__logo-link" href="#">
-          <svg class="main-nav__logo-icon" width="38" height="38">
+        <a class="main-nav__logo-link">
+          <svg class="main-nav__logo-icon" width="52" height="52">
             <use xlink:href="#icon-logo-mobile"></use>
           </svg>
-          <img class="main-nav__logo-image" src="../img/logo-header.svg" width="202" height="52" alt="Логотип компании">
+          <svg class="main-nav__logo-icon-second" width="134" height="45">
+            <use xlink:href="#icon-logo-text"></use>
+          </svg>
         </a>
         <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
       </div>
 
       <ul class="user-list">
         <li class="user-list__item user-list__item--envelope">
-          <a class="user-list__link" href="#">
+          <a class="user-list__link" href="mailto:info@sd.ru">
             <svg class="user-list__icon" width="19" height="14">
               <use xlink:href="#icon-envelope"></use>
             </svg>
@@ -39,7 +42,7 @@
           </a>
         </li>
         <li class="user-list__item user-list__item--phone">
-          <a class="user-list__link" href="#">
+          <a class="user-list__link" href="tel:+74950005252">
             <svg class="user-list__icon user-list__icon--phone" width="18" height="18">
               <use xlink:href="#icon-phone"></use>
             </svg>
@@ -55,18 +58,18 @@
     </nav>
 
     <div class="promo">
-      <h2 class="promo__title" id="product">Печатные платы</h2>
+      <h2 class="promo__title">Печатные платы</h2>
       <p class="promo__description">
         производство и монтаж, поставка комплектующих, блоков и модулей
       </p>
-      <button class="promo__button button">Бесплатная консультация</button>
-      <button class="promo__button-descktop button">Получить бесплатную консультацию</button>
-      <a class="promo__scroll" href="#">Скролл вниз</a>
+      <a class="promo__button-descktop button" href="#">Получить бесплатную консультацию</a>
+      <a class="promo__scroll" href="#scroll-down">Скролл вниз</a>
     </div>
   </header>
 
   <main class="page-main">
     <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages__list container">
         <li class="advantages__item">
           <a href="#">
@@ -95,7 +98,7 @@
             </p>
           </a>
         </li>
-        <li class="advantages__item advantages__item--detective">
+        <li class="advantages__item">
           <a href="#">
             <svg width="36" height="31">
               <use xlink:href="#icon-detective"></use>
@@ -106,7 +109,7 @@
             </p>
           </a>
         </li>
-        <li class="advantages__item advantages__item--tag">
+        <li class="advantages__item">
           <a href="#">
             <svg width="35" height="35">
               <use xlink:href="#icon-tag"></use>
@@ -114,7 +117,7 @@
             <h3>Персонализация стоимости</h3>
             <p>
               Мы подбираем определенную фабрику, поставщиков, вид доставки,
-              чтобы установить&nbspту цену, которая Вас устраивает.
+              чтобы установить&nbsp;ту цену, которая Вас устраивает.
             </p>
         </a>
         </li>
@@ -144,72 +147,73 @@
           <li class="service__item">
             <a class="service__link service__link--production" href="#" id="production">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/production-mobile@1x.png 1x, img/production-mobile@2x.png 2x">
-                <source media="(max-width: 1023px)" srcset="img/production-tablet@1x.png 1x, img/production-tablet@2x.png 2x">
-                <img class="service__image" src="img/production-desktop@1x.png 1x" srcset="img/production-desktop@2x.png 2x" width="370" height="620" alt="Производство печатных плат">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/production-mobile@1x.webp 1x, img/production-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/production-tablet@1x.webp 1x, img/production-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/production-desktop@1x.webp 1x, img/production-desktop@2x.webp 2x">
+                <img class="service__image" src="img/production-desktop@1x.png" srcset="img/production-desktop@2x.png 2x" width="370" height="620" alt="Производство печатных плат">
               </picture>
-              <p class="service__text">Производство печатных плат</p>
-              <button class="service__button" aria-label="Ознакомиться"></button>
+              <h3 class="service__text">Производство печатных плат</h3>
             </a>
           </li>
           <li class="service__item service__item--installation">
             <a class="service__link service__link--installation" href="#" id="installation">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/installation-mobile@1x.png 1x, img/installation-mobile@2x.png 2x">
-                <source media="(max-width: 1023px)" srcset="img/installation-tablet@1x.png 1x, img/installation-tablet@2x.png 2x">
-                <img class="service__image" src="img/installation-desktop@1x.png 1x" srcset="img/installation-desktop@2x.png 2x" width="370" height="620" alt="Монтаж печатных плат">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/installation-mobile@1x.webp 1x, img/installation-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/installation-tablet@1x.webp 1x, img/installation-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/installation-desktop@1x.webp 1x, img/installation-desktop@2x.webp 2x">
+                <img class="service__image" src="img/installation-desktop@1x.png" srcset="img/installation-desktop@2x.png 2x" width="370" height="620" alt="Монтаж печатных плат">
               </picture>
-              <p class="service__text service__text--installation">Монтаж печатных плат</p>
-              <button class="service__button" aria-label="Ознакомиться"></button>
+              <h3 class="service__text">Монтаж печатных плат</h3>
             </a>
           </li>
           <li class="service__item">
             <a class="service__link service__link--component" href="#" id="component">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/component-mobile@1x.png 1x, img/component-mobile@2x.png 2x">
-                <source media="(max-width: 1023px)" srcset="img/component-tablet@1x.png 1x, img/component-tablet@2x.png 2x">
-                <img class="service__image" src="img/component-desktop@1x.png 1x" srcset="img/component-desktop@2x.png 2x" width="370" height="620" alt="Комплектующие для светотехники">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/component-mobile@1x.webp 1x, img/component-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/component-tablet@1x.webp 1x, img/component-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/component-desktop@1x.webp 1x, img/component-desktop@2x.webp 2x">
+                <img class="service__image" src="img/component-desktop@1x.png" srcset="img/component-desktop@2x.png 2x" width="370" height="620" alt="Комплектующие для светотехники">
               </picture>
-              <p class="service__text service__text--component">Комплектующие для светотехники</p>
-              <button class="service__button" aria-label="Ознакомиться"></button>
+              <h3 class="service__text">Комплектующие для&nbsp;светотехники</h3>
             </a>
           </li>
         </ul>
       </div>
     </section>
 
-    <form class="form-question" action="https://echo.htmlacademy.ru" method="post">
-      <div class="form-question__wrapper container">
-        <h2 class="form-question__title">Остались вопросы? Задайте их нам!</h2>
-        <p class="form-question__text">Мы проконсультируем Вас бесплатно</p>
+    <section class="feedback">
+        <div class="feedback__wrapper container">
+          <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
+          <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
 
-        <ul class="form-question__list">
-          <li class="form-question__item form-question__item--firstname">
-            <label class="form-question__label visually-hidden" for="firstname">Имя</label>
-            <input class="form-question__input-text" type="text" id="firstname" name="firstname" placeholder="Имя">
-          </li>
-          <li class="form-question__item">
-            <label class="form-question__label visually-hidden" for="phone">Телефон</label>
-            <input class="form-question__input-text" type="tel" id="phone" name="phone" placeholder="Телефон">
-          </li>
-          <li class="form-question__item form-question__item--textarea">
-            <label class="form-question__legend visually-hidden" for="message">Ваш вопрос</label>
-            <textarea class="form-question__textarea" name="message" placeholder="Ваш вопрос"></textarea>
-          </li>
-        </ul>
+          <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="feedback__form-wrapper">
+              <label class="visually-hidden" for="firstname">Имя</label>
+              <input type="text" id="firstname" name="firstname" placeholder="Имя" required>
 
-        <div class="form-question__consent-wrapper">
-          <button class="form-question__button button" type="submit">Задать вопрос</button>
-          <p class="form-question__consent">Я согласен на обработку персональных данных</p>
+              <label class="visually-hidden" for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+            </div>
+
+            <label class="visually-hidden" for="text">Ваш вопрос</label>
+            <textarea name="message" id="text" placeholder="Ваш вопрос"></textarea>
+
+            <div class="feedback___form-button">
+              <button type="submit">Задать вопрос</button>
+              <div class="feedback__form-agreement">
+                <label for="agreement">Я согласен на обработку персональных данных</label>
+                <input class="visually-hidden" type="checkbox" id="agreement" checked>
+              </div>
+            </div>
+          </form>
         </div>
-      </div>
-    </form>
+    </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer" id="scroll-down">
     <div class="page-footer__wrapper">
       <div class="page-footer__top">
-        <a class="page-footer__logo-link" href="#">
+        <a class="page-footer__logo-link">
           <img src="../img/logo-footer.svg" width="216" height="52" alt="Логотип компании">
         </a>
 
@@ -286,36 +290,31 @@
     </div>
   </footer>
 
-  <div class="feedback hidden">
-    <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="feedback__wrapper">
-        <h2 class="feedback__title">Закажите звонок</h2>
-        <p class="feedback__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+  <div class="modal hidden">
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Закажите звонок</h2>
+      <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 
-        <ul class="feedback__list">
-          <li class="feedback__item feedback__item--firstname">
-            <label class="feedback__label visually-hidden" for="firstname">Имя</label>
-            <input class="feedback__input-text feedback__input-text--firstname" type="text" id="firstname" name="firstname" placeholder="Имя">
-          </li>
-          <li class="feedback__item">
-            <label class="feedback__label visually-hidden" for="phone">Телефон</label>
-            <input class="feedback__input-text" type="tel" id="phone" name="phone" placeholder="Телефон">
-          </li>
-          <li class="feedback__item feedback__item--textarea">
-            <label class="feedback__legend visually-hidden" for="message">Ваш вопрос</label>
-            <textarea class="feedback__textarea" name="message" placeholder="Ваш вопрос"></textarea>
-          </li>
-        </ul>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="name">Имя</label>
+        <input type="text" id="name" name="firstname" placeholder="Имя">
 
-        <div class="feedback__consent-wrapper">
-          <button class="feedback__button button" type="submit">Отправить</button>
-          <p class="feedback__consent">Я согласен на обработку персональных данных</p>
-        </div>
-      </div>
-      <span class="feedback__close" tabindex="0"></span>
-    </form>
+        <label class="visually-hidden" for="number">Телефон</label>
+        <input type="tel" id="number" name="phone" placeholder="Телефон">
+
+        <label class="visually-hidden" for="message">Ваш вопрос</label>
+        <textarea name="message" id="message" placeholder="Ваш вопрос"></textarea>
+
+        <button type="submit">Отправить</button>
+
+        <label for="consent">Я согласен на обработку персональных данных</label>
+        <input class="visually-hidden" type="checkbox" id="consent" checked>
+      </form>
+      <span class="modal__close" tabindex="0"></span>
+    </div>
   </div>
   <div class="overlay hidden"></div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
 </body>
-<script src="js/dialog.js"></script>
 </html>
