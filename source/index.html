@@ -62,7 +62,10 @@
       <p class="promo__description">
         производство и монтаж, поставка комплектующих, блоков и модулей
       </p>
-      <a class="promo__button-descktop button" href="#">Получить бесплатную консультацию</a>
+      <a class="promo__button button" href="#">
+        <span class="promo__button-text">Получить бесплатную консультацию</span>
+        <span class="promo__button-text promo__button-text--mobile">Бесплатная консультация</span>
+      </a>
       <a class="promo__scroll" href="#scroll-down">Скролл вниз</a>
     </div>
   </header>
@@ -214,7 +217,9 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__top">
         <a class="page-footer__logo-link">
-          <img src="../img/logo-footer.svg" width="216" height="52" alt="Логотип компании">
+          <svg class="page-footer__logo-icon" width="216" height="52">
+            <use xlink:href="#icon-logo-footer"></use>
+          </svg>
         </a>
 
         <ul class="social">
@@ -281,12 +286,12 @@
       </div>
     </div>
     <div class="page-footer__confidentiality confidentiality">
-      <div class="confidentiality__wrapper">
-        <p class="confidentiality__text confidentiality__text--protect">Все права защищены</p>
-        <p class="confidentiality__period">1999-2018 SD Service Devices</p>
-        <p class="confidentiality__text confidentiality__text--privacy">Условия конфиденциальности</p>
-      </div>
-      <p class="confidentiality__text">Developed by wow studio</p>
+      <a class="confidentiality__link-wrapper" href="#">
+        <span class="confidentiality__text confidentiality__text--protect">Все права защищены</span>
+        <span class="confidentiality__period">1999-2018 SD Service Devices</span>
+        <span class="confidentiality__text confidentiality__text--privacy">Условия конфиденциальности</span>
+      </a>
+      <a class="confidentiality__text" href="#">Developed by wow studio</a>
     </div>
   </footer>
 

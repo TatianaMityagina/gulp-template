@@ -7,8 +7,10 @@
   width: 1412px;
 }
 
-.confidentiality__wrapper {
+.confidentiality__link-wrapper {
   display: flex;
+
+  text-decoration: none;
 }
 
 .confidentiality__period {
@@ -32,6 +34,7 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: #1b2d37;
+  text-decoration: none;
 
   opacity: 0.5;
 
@@ -74,7 +77,7 @@
     border: none;
   }
 
-  .confidentiality__wrapper {
+  .confidentiality__link-wrapper {
     margin-bottom: 20px;
   }
 

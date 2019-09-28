@@ -12,6 +12,8 @@
   background-position-x: -240px;
   background-repeat: no-repeat;
 
+  overflow: hidden;
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/main-bg-desktop@2x.png");
   }
