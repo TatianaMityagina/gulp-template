@@ -10,6 +10,13 @@
   background-position-x: -240px;
 }
 
+@media (max-width: $tablet-width) {
+  .page-main {
+    background-position-y: -86px;
+    background-position-x: -348px;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .page-main {
     padding-top: 20px;

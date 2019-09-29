@@ -1,7 +1,7 @@
 .page-footer {
   padding-top: 40px;
-  max-width: 1412px;
-  margin: 0 auto;
+
+  overflow: hidden;
 }
 
 .page-footer__wrapper {
@@ -11,6 +11,7 @@
   justify-content: space-between;
   padding-bottom: 30px;
   max-width: 1412px;
+  margin: 0 auto;
 
   &::after {
     position: absolute;
@@ -42,7 +43,6 @@
 @media (max-width: $tablet-width) {
   .page-footer {
     padding-top: 0;
-    max-width: 720px;
   }
 
   .page-footer__wrapper {
@@ -84,10 +84,6 @@
 }
 
 @media (max-width: $mobile-width) {
-  .page-footer {
-    width: 290px;
-  }
-
   .page-footer__wrapper {
     flex-direction: column;
     justify-content: center;

@@ -71,7 +71,7 @@
   .history {
     padding-top: 10px;
     padding-left: 210px;
-    padding-bottom: 63px;
+    padding-bottom: 84px;
 
     &::before {
       top: 8px;
@@ -127,7 +127,8 @@
   .history a {
     display: block;
     padding: 14px 0;
-    width: 180px;
+    margin-top: 35px;
+    width: 182px;
 
     font-size: 14px;
     line-height: 16px;
@@ -168,7 +169,7 @@
   }
 
   .history a {
-    margin-top: -10px;
+    margin-top: -17px;
     padding: 13px 0;
     width: 180px;
   }

@@ -136,9 +136,10 @@
   }
 }
 
-.feedback__form-agreement input:checked + .feedback__form-agreement label::before {
+.feedback__form-agreement input:checked + label::before {
   background-image: url("../img/icon-check.svg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: 9px 6px;
 }
 
@@ -146,13 +147,14 @@
 @media (max-width: $tablet-width) {
   .feedback {
     padding-top: 80px;
-    padding-bottom: 104px;
+    padding-bottom: 102px;
 
     background-image: none;
   }
 
   .feedback__wrapper {
     max-width: 640px;
+    margin: 0 auto;
     padding-left: 25px;
   }
 
@@ -200,6 +202,7 @@
 
   .feedback__wrapper {
     width: 290px;
+    margin: 0 auto;
     padding-left: 0;
   }
 

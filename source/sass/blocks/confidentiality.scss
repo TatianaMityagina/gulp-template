@@ -4,6 +4,8 @@
   justify-content: space-between;
   padding-top: 15px;
   padding-bottom: 20px;
+  max-width: 1412px;
+  margin: 0 auto;
 }
 
 .confidentiality__link-wrapper {
@@ -38,7 +40,7 @@
   opacity: 0.5;
 
   &--protect {
-    margin-right: 72px;
+    margin-right: 75px;
   }
 }
 
@@ -48,7 +50,7 @@
 
     padding-top: 22px;
     padding-bottom: 20px;
-    width: 100%;
+    max-width: 720px;
   }
 
   .confidentiality__period {
@@ -72,7 +74,7 @@
 
     padding-top: 28px;
     padding-bottom: 20px;
-    width: 100%;
+    width: 290px;
     border: none;
   }
 

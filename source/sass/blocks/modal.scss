@@ -111,12 +111,11 @@
   }
 }
 
-.modal input:checked + .modal label::before {
+.modal__consent input:checked + label::before {
   background-image: url("../img/icon-check.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: transparent;
-  background-size: 9px 9px;
+  background-size: 9px 6px;
 }
 
 .modal__close {

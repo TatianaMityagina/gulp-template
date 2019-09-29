@@ -50,11 +50,13 @@ setupClose.addEventListener('keydown', function (evt) {
   }
 });
 
+//Скролл
+
 var anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
+  anchor.addEventListener('click', function (evt) {
+    evt.preventDefault()
 
     var blockID = anchor.getAttribute('href').substr(1)
 
