@@ -113,6 +113,15 @@
 
   .advantages__item {
     width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .advantages a {
+    min-height: 232px;
+  }
+
+  .advantages svg {
+    margin-bottom: 4px;
   }
 
   .advantages h3 {
@@ -121,7 +130,7 @@
   }
 
   .advantages p {
-    padding-right: 10px;
-    padding-bottom: 20px;
+    padding-right: 13px;
+    padding-bottom: 25px;
   }
 }

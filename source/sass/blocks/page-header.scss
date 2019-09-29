@@ -9,7 +9,7 @@
   background-color: #1b2d37;
   background-image: url("../img/main-bg-desktop@1x.png");
   background-size: auto 878px;
-  background-position-x: -240px;
+  background-position-x: -255px;
   background-repeat: no-repeat;
 
   overflow: hidden;
@@ -21,8 +21,8 @@
   &::after {
     position: absolute;
     content: "";
-    top: 260px;
-    left: 800px;
+    top: 258px;
+    left: 788px;
     z-index: -1;
 
     width: 705px;

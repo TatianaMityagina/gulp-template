@@ -14,8 +14,8 @@
     left: -29px;
     z-index: -1;
 
-    width: 323px;
-    height: 210px;
+    width: 220px;
+    height: 317px;
 
     background-image: url("../img/2005@1x.png");
     background-repeat: no-repeat;
@@ -51,13 +51,6 @@
   margin-bottom: 20px;
 }
 
-.history span {
-  white-space: normal;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-}
-
 .history a {
   display: block;
   padding: 14px 0;
@@ -85,12 +78,18 @@
       left: 0;
       z-index: 1;
 
-      width: 244px;
-      height: 352px;
+      width: 251px;
+      height: 362px;
 
       background-image: url("../img/2005-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/2005-tablet@2x.png");
+        background-size: 97%;
+      }
     }
   }
+
 
   .history h2 {
     margin-bottom: 26px;
@@ -106,7 +105,23 @@
   }
 
   .history span {
-    white-space: nowrap;
+    position: relative;
+
+    font-size: 0;
+
+    &::after {
+      position: absolute;
+      content: "..";
+      bottom: -6px;
+      left: -10px;
+
+      font-family: "PT Mono", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: #666666;
+    }
   }
 
   .history a {
