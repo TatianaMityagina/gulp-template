@@ -128,7 +128,7 @@
         <span class="promo__button-text">Получить бесплатную консультацию</span>
         <span class="promo__button-text promo__button-text--mobile">Бесплатная консультация</span>
       </a>
-      <a class="promo__scroll" href="#scroll-down">Скролл вниз</a>
+      <a class="promo__scroll" onclick="scrollDown();return!;">Скролл вниз</a>
     </div>
   </header>
 
@@ -354,12 +354,15 @@
       </div>
     </div>
     <div class="page-footer__confidentiality confidentiality">
-      <a class="confidentiality__link-wrapper" href="#">
-        <span class="confidentiality__text confidentiality__text--protect">Все права защищены</span>
-        <span class="confidentiality__period">1999-2018 SD Service Devices</span>
-        <span class="confidentiality__text confidentiality__text--privacy">Условия конфиденциальности</span>
-      </a>
-      <a class="confidentiality__text" href="#">Developed by wow studio</a>
+      <div class="confidentiality__wrapper">
+        <p class="confidentiality__text confidentiality__text--protect">Все права защищены</p>
+        <p class="confidentiality__period">1999-2018 SD Service Devices</p>
+        <a class="confidentiality__link" href="#">Условия конфиденциальности</a>
+      </div>
+      <div class="confidentiality__copyright">
+        <p class="confidentiality__text confidentiality__text--developer">Developed by</p>
+        <a class="confidentiality__link" href="#">wow studio</a>
+      </div>
     </div>
   </footer>
 

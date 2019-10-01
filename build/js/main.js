@@ -52,15 +52,15 @@ setupClose.addEventListener('keydown', function (evt) {
 
 //Скролл
 
-var anchors = document.querySelectorAll('a[href*="#"]')
-
-anchors.addEventListener('click', function (evt) {
-  evt.preventDefault();
-
-  var blockID = anchors.getAttribute('href').substr(1);
-
-  document.getElementById(blockID).scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
-  });
-});
+function scrollDown () {
+  var windowCoords = document.body.clientHeight - document.documentElement.clientHeight;
+  (function scroll() {
+    if (window.pageYOffset < windowCoords) {
+      window.scrollBy(0, 50);
+      setTimeout(scroll, 0);
+    }
+    if (window.pageYOffset > windowCoords) {
+      window.scrollTo(0, windowCoords);
+    }
+  })();
+}
