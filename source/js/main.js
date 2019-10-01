@@ -18,6 +18,7 @@ var openPopup = function () {
   setup.classList.remove('hidden');
   overlay.classList.remove('hidden');
   document.addEventListener('keydown', onPopupEscPress);
+  document.body.style.overflow = 'hidden';
 };
 
 var closePopup = function () {
@@ -50,9 +51,9 @@ setupClose.addEventListener('keydown', function (evt) {
   }
 });
 
-//Скролл
+// Скролл
 
-function scrollDown () {
+function scrollDown() {
   var windowCoords = document.body.clientHeight - document.documentElement.clientHeight;
   (function scroll() {
     if (window.pageYOffset < windowCoords) {

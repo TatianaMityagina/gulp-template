@@ -128,7 +128,7 @@
         <span class="promo__button-text">Получить бесплатную консультацию</span>
         <span class="promo__button-text promo__button-text--mobile">Бесплатная консультация</span>
       </a>
-      <a class="promo__scroll" onclick="scrollDown();return!;">Скролл вниз</a>
+      <a class="promo__scroll" onclick="scrollDown();return">Скролл вниз</a>
     </div>
   </header>
 
@@ -212,8 +212,6 @@
           <li class="service__item">
             <a class="service__link service__link--production" href="#" id="production">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/production-mobile@1x.webp 1x, img/production-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/production-tablet@1x.webp 1x, img/production-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/production-desktop@1x.webp 1x, img/production-desktop@2x.webp 2x">
                 <img class="service__image" src="img/production-desktop@1x.png" srcset="img/production-desktop@2x.png 2x" width="370" height="620" alt="Производство печатных плат">
               </picture>
@@ -223,8 +221,6 @@
           <li class="service__item service__item--installation">
             <a class="service__link service__link--installation" href="#" id="installation">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/installation-mobile@1x.webp 1x, img/installation-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/installation-tablet@1x.webp 1x, img/installation-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/installation-desktop@1x.webp 1x, img/installation-desktop@2x.webp 2x">
                 <img class="service__image" src="img/installation-desktop@1x.png" srcset="img/installation-desktop@2x.png 2x" width="370" height="620" alt="Монтаж печатных плат">
               </picture>
@@ -234,12 +230,10 @@
           <li class="service__item">
             <a class="service__link service__link--component" href="#" id="component">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/component-mobile@1x.webp 1x, img/component-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/component-tablet@1x.webp 1x, img/component-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/component-desktop@1x.webp 1x, img/component-desktop@2x.webp 2x">
                 <img class="service__image" src="img/component-desktop@1x.png" srcset="img/component-desktop@2x.png 2x" width="370" height="620" alt="Комплектующие для светотехники">
               </picture>
-              <h3 class="service__text">Комплектующие для&nbsp;светотехники</h3>
+              <h3 class="service__text service__text--component">Комплектующие для&nbsp;светотехники</h3>
             </a>
           </li>
         </ul>
@@ -262,7 +256,7 @@
             </div>
 
             <label class="visually-hidden" for="text">Ваш вопрос</label>
-            <textarea name="message" id="text" placeholder="Ваш вопрос"></textarea>
+            <textarea name="message" id="text" placeholder="Ваш вопрос" required=""></textarea>
 
             <div class="feedback___form-button">
               <button type="submit">Задать вопрос</button>
@@ -379,7 +373,7 @@
         <input type="tel" id="number" name="phone" placeholder="Телефон" required="">
 
         <label class="visually-hidden" for="message">Ваш вопрос</label>
-        <textarea name="message" id="message" placeholder="Ваш вопрос"></textarea>
+        <textarea name="message" id="message" placeholder="Ваш вопрос" required=""></textarea>
 
         <button type="submit">Отправить</button>
 
