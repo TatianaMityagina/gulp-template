@@ -25,6 +25,7 @@ var closePopup = function () {
   setup.classList.add('hidden');
   overlay.classList.add('hidden');
   document.removeEventListener('keydown', onPopupEscPress);
+  document.body.style.overflow = 'visible';
 };
 
 setupOpen.addEventListener('click', function () {

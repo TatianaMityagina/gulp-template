@@ -58,6 +58,8 @@
 
   border: none;
 
+  transition-duration: 0.3s;
+
   &:hover,
   :focus {
     color: #00b2ff;
@@ -91,6 +93,8 @@
   opacity: 0.5;
   transform: rotate(-90deg);
   cursor: pointer;
+
+  transition-duration: 0.3s;
 
   &:hover,
   :focus {

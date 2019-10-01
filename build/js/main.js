@@ -53,7 +53,7 @@ setupClose.addEventListener('keydown', function (evt) {
 
 // Скролл
 
-function scrollDown () {
+function scrollDown() {
   var windowCoords = document.body.clientHeight - document.documentElement.clientHeight;
   (function scroll() {
     if (window.pageYOffset < windowCoords) {

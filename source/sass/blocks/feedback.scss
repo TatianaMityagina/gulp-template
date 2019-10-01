@@ -69,6 +69,7 @@
   border: none;
 
   cursor: pointer;
+  transition-duration: 0.3s;
 
   &:hover,
   :focus {
@@ -89,6 +90,7 @@
   border: none;
 
   cursor: pointer;
+  transition-duration: 0.3s;
 
   &:hover,
   :focus {
@@ -130,6 +132,7 @@
   border: 1px solid #ffffff;
 
   cursor: pointer;
+  transition-duration: 0.3s;
 
   &:hover,
   :focus {
@@ -155,6 +158,7 @@
   opacity: 0.8;
 
   transform: translateY(-6px);
+  transition-duration: 0.3s;
 
   &::before {
     position: relative;
@@ -167,6 +171,8 @@
     height: 16px;
 
     border: 1px solid white;
+
+    transition-duration: 0.3s;
   }
 
   &:hover,

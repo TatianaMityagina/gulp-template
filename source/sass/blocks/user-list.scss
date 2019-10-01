@@ -23,7 +23,10 @@
 
 .user-list__link {
   display: flex;
+
   text-decoration: none;
+
+  transition-duration: 0.3s;
 
   &:hover,
   :focus {
