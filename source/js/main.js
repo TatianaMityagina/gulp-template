@@ -52,7 +52,7 @@ setupClose.addEventListener('keydown', function (evt) {
 
 //Скролл
 
-var anchors = document.querySelectorAll('a[href*="#"]')
+var anchors = document.querySelectorAll('a[href*="#"]');
 
 anchors.addEventListener('click', function (evt) {
   evt.preventDefault();

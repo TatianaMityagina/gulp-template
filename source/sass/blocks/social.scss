@@ -8,9 +8,21 @@
 }
 
 .social__link {
+  fill: #cdcdcd;
+
   &--ok {
     margin-left: 14px;
     margin-right: 14px;
+  }
+
+  &:hover,
+  :focus {
+    fill: #1b2d37;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
   }
 }
 

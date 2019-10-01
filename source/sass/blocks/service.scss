@@ -59,6 +59,18 @@
   width: 100%;
 
   text-decoration: none;
+
+  &:hover,
+  :focus {
+    outline-color: #00b2ff;
+    outline-offset: -2px;
+    outline-style: auto;
+    outline-width: 5px;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .service__image {

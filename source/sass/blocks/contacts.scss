@@ -4,6 +4,11 @@
   width: 335px;
 }
 
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__title {
   position: relative;
 
@@ -30,6 +35,15 @@
   color: #1b2d37;
 
   opacity: 0.5;
+
+  &:hover,
+  :focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .contacts__phone {
@@ -41,6 +55,15 @@
   color: #1b2d37;
 
   opacity: 0.5;
+
+  &:hover,
+  :focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 @media (max-width: $tablet-width) {

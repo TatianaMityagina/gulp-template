@@ -66,6 +66,15 @@
 
   background: rgba(255, 255, 255, 0.1);
   border: none;
+
+  cursor: pointer;
+
+  &:hover,
+  :focus {
+    outline-color: #ffffff;
+    outline-style: auto;
+    outline-width: 5px;
+  }
 }
 
 .feedback textarea {
@@ -77,6 +86,15 @@
 
   background: rgba(255, 255, 255, 0.1);
   border: none;
+
+  cursor: pointer;
+
+  &:hover,
+  :focus {
+    outline-color: #ffffff;
+    outline-style: auto;
+    outline-width: 5px;
+  }
 }
 
 .feedback input::placeholder,
@@ -109,6 +127,21 @@
   background: #00b2ff;
   border-radius: 5px;
   border: 1px solid #ffffff;
+
+  cursor: pointer;
+
+  &:hover,
+  :focus {
+    color: #00b2ff;
+
+    background: #ffffff;
+  }
+
+  &:active {
+    color: #ffffff;
+
+    background-color: #1d91df;
+  }
 }
 
 .feedback__form-agreement label {
@@ -133,6 +166,12 @@
     height: 16px;
 
     border: 1px solid white;
+  }
+
+  &:hover,
+  :focus {
+    text-decoration: underline;
+    cursor: pointer;
   }
 }
 

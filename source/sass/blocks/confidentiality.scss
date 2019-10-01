@@ -25,6 +25,15 @@
   color: #1b2d37;
 
   opacity: 0.5;
+
+  &:hover,
+  :focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .confidentiality__text {
@@ -41,6 +50,15 @@
 
   &--protect {
     margin-right: 75px;
+  }
+
+  &:hover,
+  :focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
   }
 }
 

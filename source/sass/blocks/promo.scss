@@ -57,6 +57,19 @@
   text-decoration: none;
 
   border: none;
+
+  &:hover,
+  :focus {
+    color: #00b2ff;
+
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: #ffffff;
+
+    background-color: #1d91df;
+  }
 }
 
 .promo__button-text {
@@ -77,6 +90,15 @@
 
   opacity: 0.5;
   transform: rotate(-90deg);
+
+  &:hover,
+  :focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 @media (max-width: $tablet-width) {

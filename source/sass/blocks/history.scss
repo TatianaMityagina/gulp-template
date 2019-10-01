@@ -12,7 +12,6 @@
     content: "";
     top: 55px;
     left: -29px;
-    z-index: -1;
 
     width: 220px;
     height: 317px;
@@ -65,6 +64,16 @@
   border: 1px solid #00b2ff;
   border-radius: 5px;
   background-color: #ffffff;
+
+  &:hover,
+  :focus {
+    color: #ffffff;
+    background-color: #00b2ff;
+  }
+
+  &:active {
+    background-color: #1d91df;
+  }
 }
 
 @media (max-width: $tablet-width) {

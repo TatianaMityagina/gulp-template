@@ -25,6 +25,18 @@
   display: flex;
   text-decoration: none;
 
+  &:hover,
+  :focus {
+    outline-color: #00b2ff;
+    outline-offset: -2px;
+    outline-style: auto;
+    outline-width: 5px;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   &--call {
     display: block;
     padding: 13px 0;
@@ -40,6 +52,17 @@
     background: none;
     border: 1px solid #ffffff;
     border-radius: 5px;
+
+    &:hover,
+    :focus {
+      outline: none;
+
+      border-color: #00b2ff;
+    }
+
+    &:active {
+      border-color: #1d91df;
+    }
   }
 }
 

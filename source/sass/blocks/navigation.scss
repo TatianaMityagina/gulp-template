@@ -45,6 +45,15 @@
   text-decoration: none;
   color: #1b2d37;
   opacity: 0.5;
+
+  &:hover,
+  :focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 @media (max-width: $tablet-width) {
