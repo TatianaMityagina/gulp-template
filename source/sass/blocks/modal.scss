@@ -84,6 +84,12 @@
   color: #ffffff;
 }
 
+.modal input[type=text],
+.modal input[type=tel],
+.modal textarea[type=text] {
+  color: #ffffff;
+}
+
 .modal button {
   display: block;
   padding: 14px 0;

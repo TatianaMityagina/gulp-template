@@ -105,6 +105,12 @@
   color: #ffffff;
 }
 
+.feedback input[type=text],
+.feedback input[type=tel],
+.feedback textarea[type=text] {
+  color: #ffffff;
+}
+
 .feedback___form-button {
   display: flex;
   align-items: center;
