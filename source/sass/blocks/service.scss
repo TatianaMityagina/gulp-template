@@ -76,6 +76,8 @@
 
 .service__image {
   width: 100%;
+
+  opacity: 0.2;
 }
 
 .service__text {
@@ -131,6 +133,13 @@
     margin-bottom: 40px;
     margin-right: 0;
     width: 100%;
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      bottom: 6px;
+    }
   }
 
   .service__image {
