@@ -5,11 +5,12 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 275px;
+  padding-top: 34px;
 
   background-color: #1b2d37;
   background-image: url("../img/main-bg-desktop@1x.png");
   background-size: auto 878px;
-  background-position-x: -245px;
+  background-position-x: -240px;
   background-repeat: no-repeat;
 
   overflow: hidden;
@@ -22,7 +23,7 @@
     position: absolute;
     content: "";
     top: 258px;
-    left: 798px;
+    left: 800px;
     z-index: -1;
 
     width: 705px;
@@ -40,7 +41,8 @@
 
 @media (max-width: $tablet-width) {
   .page-header {
-    padding-bottom: 165px;
+    padding-top: 20px;
+    padding-bottom: 164px;
 
     background-image: url("../img/main-bg-tablet@1x.png");
     background-size: auto auto;
@@ -71,6 +73,7 @@
 
 @media (max-width: $mobile-width) {
   .page-header {
+    padding-top: 17px;
     padding-bottom: 70px;
 
     background-image: url("../img/main-bg-mobile@1x.png");

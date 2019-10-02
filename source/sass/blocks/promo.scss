@@ -1,7 +1,6 @@
 .promo {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 225px;
   max-width: 1415px;
   width: 100%;
 }
@@ -109,7 +108,6 @@
 @media (max-width: $tablet-width) {
   .promo {
     max-width: 720px;
-    padding-top: 112px;
     padding-left: 63px;
   }
 
@@ -152,7 +150,6 @@
 @media (max-width: $mobile-width) {
   .promo {
     width: 290px;
-    padding-top: 225px;
     padding-left: 0;
   }
 
