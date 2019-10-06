@@ -76,3 +76,21 @@ inputs.forEach(function (input) {
     mask: '+{7}(000)000-00-00'
   });
 });
+
+// Аккардион
+
+var elem = document.querySelectorAll('.accordion'); //дементы по которым будет действие клика
+
+var i;
+var length = elem.length;
+
+for (i = 0; i < length; i++) {
+  elem[i].addEventListener('click', function () {
+    var allItems = document.querySelectorAll('.wrp'); //сначала нахоим все элементы .wrp
+    Array.from(allItems).forEach(function(item) {
+      item.classList.remove('active'); //удалаем всем .wrp класс active
+    });
+    this.querySelector('.wrp').classList.add("active"); //находим ребенка кликнутого элемента и даем класс active
+  });
+}
+

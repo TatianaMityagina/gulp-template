@@ -91,6 +91,8 @@
     padding-top: 28px;
     padding-bottom: 26px;
 
+    cursor: pointer;
+
     &::after {
       position: absolute;
       content: "";
@@ -104,49 +106,43 @@
     }
   }
 
-  .navigation__list {
-    display: none;
-  }
-
   .navigation__title {
     padding-left: 2px;
     margin-bottom: 0;
   }
 
-  .navigation__toggle {
-    display: block;
+  .navigation__list-wrapper {
+    display: none;
+    padding-top: 30px;
+  }
 
-    outline: none;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  .active {
+    display: flex;
 
-    &--closed {
-      &::after {
-        position: absolute;
-        content: "";
-        top: 28px;
-        left: 272px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 28px;
+      left: 272px;
 
-        width: 16px;
-        height: 16px;
+      width: 16px;
+      height: 16px;
 
-        background-image: url("../img/icon-plus.svg");
-      }
+      background-image: url("../img/icon-minus.svg");
+      background-repeat: no-repeat;
     }
+  }
 
-    &--open {
-      &::after {
-        position: absolute;
-        content: "";
-        top: 35px;
-        left: 272px;
+  .inactive {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 35px;
+      left: 272px;
 
-        width: 16px;
-        height: 2px;
+      width: 16px;
+      height: 2px;
 
-        background-image: url("../img/icon-minus.svg");
-      }
-    }
+      background-image: url("../img/icon-plus.svg");
   }
 }

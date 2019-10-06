@@ -100,6 +100,8 @@
     padding-top: 28px;
     padding-bottom: 24px;
 
+    cursor: pointer;
+
     &::after {
       position: absolute;
       content: "";
@@ -115,47 +117,47 @@
 
   .contacts__title {
     padding-left: 2px;
-    margin-bottom: 32px;
+    margin-bottom: 0;
   }
 
   .contacts__address {
     width: 230px;
   }
 
-  .contacts__toggle {
-    display: block;
+  .contacts__wrapper {
+    display: none;
 
-    outline: none;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+    padding-top: 30px;
+  }
 
-    &--closed {
-      &::after {
-        position: absolute;
-        content: "";
-        top: 28px;
-        left: 272px;
+  .active {
+    display: flex;
 
-        width: 16px;
-        height: 16px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 28px;
+      left: 272px;
 
-        background-image: url("../img/icon-plus.svg");
-      }
+      width: 16px;
+      height: 16px;
+
+      background-image: url("../img/icon-minus.svg");
+      background-repeat: no-repeat;
     }
+  }
 
-    &--open {
-      &::after {
-        position: absolute;
-        content: "";
-        top: 35px;
-        left: 272px;
+  .inactive {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 35px;
+      left: 272px;
 
-        width: 16px;
-        height: 2px;
+      width: 16px;
+      height: 2px;
 
-        background-image: url("../img/icon-minus.svg");
-      }
+      background-image: url("../img/icon-plus.svg");
     }
   }
 }

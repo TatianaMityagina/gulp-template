@@ -79,35 +79,20 @@ inputs.forEach(function (input) {
 
 // Аккардион
 
+var elem = document.querySelectorAll('.accordion'); //дементы по которым будет действие клика
 
-var navListElement = document.querySelectora(".navigation__list");
-var navToogleElement = document.querySelector(".navigation__toggle");
+var i;
+var length = elem.length;
 
-var contactListElement = document.querySelector(".contacts__wrapper");
-var contactToogleElement = document.querySelector(".contacts__toggle");
+for (i = 0; i < length; i++) {
+  elem[i].addEventListener('click', function () {
+    var allItems = document.querySelectorAll('.wrp'); //сначала нахоим все элементы .wrp
+    Array.from(allItems).forEach(function(item) {
+      item.classList.remove('active'); //удалаем всем .wrp класс active
+      item.classList.add('inactive');
+    });
+    this.querySelector('.wrp').classList.add("active"); //находим ребенка кликнутого элемента и даем класс active
+    this.querySelector('.wrp').classList.remove("inactive");
+  });
+}
 
-var accordion = function () {
-  if (navToogleElement.classList.contains("navigation__toggle--open")) {
-    navToogleElement.classList.remove("navigation__toggle--open");
-    navToogleElement.classList.add("navigation__toggle--closed");
-    contactToogleElement.classList.remove("navigation__toggle--closed");
-    contactToogleElement.classList.add("navigation__toggle--open");
-    navListElement.style.display = "block";
-    contactListElement.style.display = "none";
-  } else {
-    navToogleElement.classList.add("navigation__toggle--open");
-    navToogleElement.classList.remove("navigation__toggle--closed");
-    navListElement.style.display = "none";
-    contactToogleElement.classList.remove("navigation__toggle--closed");
-    contactToogleElement.classList.add("navigation__toggle--open");
-    contactListElement.style.display = "block";
-  }
-};
-
-navToogleElement.addEventListener('click', function () {
-  accordion();
-});
-
-contactToogleElement.addEventListener('click', function () {
-  accordion();
-});
