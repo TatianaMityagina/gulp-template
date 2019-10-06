@@ -101,18 +101,6 @@
     padding-bottom: 24px;
 
     cursor: pointer;
-
-    &::after {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: -100%;
-
-      width: 3000px;
-      height: 1px;
-
-      background-color: rgba(98, 105, 98, 0.2);
-    }
   }
 
   .contacts__title {
@@ -151,13 +139,14 @@
     &::after {
       position: absolute;
       content: "";
-      top: 35px;
+      top: 25px;
       left: 272px;
 
       width: 16px;
-      height: 2px;
+      height: 16px;
 
       background-image: url("../img/icon-plus.svg");
+      background-color: transparent;
     }
   }
 }

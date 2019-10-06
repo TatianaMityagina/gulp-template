@@ -99,12 +99,26 @@
 
 @media (max-width: $mobile-width) {
   .confidentiality {
+    position: relative;
+
     flex-direction: column;
 
     padding-top: 28px;
     padding-bottom: 20px;
     width: 290px;
     border: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -100%;
+
+      width: 3000px;
+      height: 1px;
+
+      background-color: rgba(98, 105, 98, 0.2);
+    }
   }
 
   .confidentiality__wrapper {

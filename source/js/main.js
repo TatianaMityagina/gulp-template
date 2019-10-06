@@ -86,12 +86,20 @@ var length = elem.length;
 
 for (i = 0; i < length; i++) {
   elem[i].addEventListener('click', function () {
-    var allItems = document.querySelectorAll('.wrp'); //сначала нахоим все элементы .wrp
-    Array.from(allItems).forEach(function(item) {
-      item.classList.remove('active'); //удалаем всем .wrp класс active
-      item.classList.add('inactive');
-    });
-    this.querySelector('.wrp').classList.add("active"); //находим ребенка кликнутого элемента и даем класс active
-    this.querySelector('.wrp').classList.remove("inactive");
+    for (i = 0; i < length; i++) {
+      elem[i].addEventListener('click', function () {
+        var allItems = document.querySelectorAll('.wrp'); //сначала нахоим все элементы .wrp
+        Array.from(allItems).forEach(function (item) {
+          item.classList.remove('active'); //удалаем всем .wrp класс active
+          item.classList.add('inactive');
+        });
+        Array.from(elem).forEach(function (item) {
+          item.classList.add('inactive');
+        });
+        this.classList.remove('inactive');
+        this.querySelector('.wrp').classList.add("active"); //находим ребенка кликнутого элемента и даем класс active
+        this.querySelector('.wrp').classList.remove("inactive");
+      });
+    }
   });
 }
