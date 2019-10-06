@@ -95,4 +95,3 @@ for (i = 0; i < length; i++) {
     this.querySelector('.wrp').classList.remove("inactive");
   });
 }
-

@@ -89,8 +89,10 @@ for (i = 0; i < length; i++) {
     var allItems = document.querySelectorAll('.wrp'); //сначала нахоим все элементы .wrp
     Array.from(allItems).forEach(function(item) {
       item.classList.remove('active'); //удалаем всем .wrp класс active
+      item.classList.add('inactive');
     });
     this.querySelector('.wrp').classList.add("active"); //находим ребенка кликнутого элемента и даем класс active
+    this.querySelector('.wrp').classList.remove("inactive");
   });
 }
 
