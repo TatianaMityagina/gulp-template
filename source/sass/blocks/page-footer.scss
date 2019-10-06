@@ -40,6 +40,18 @@
   margin-bottom: 12px;
 }
 
+.page-footer__period {
+  display: none;
+
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #1b2d37;
+
+  opacity: 0.5;
+}
+
 @media (max-width: $tablet-width) {
   .page-footer {
     padding-top: 0;
@@ -98,12 +110,17 @@
   .page-footer__top {
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 50px;
+    padding-bottom: 48px;
     padding-top: 45px;
   }
 
   .page-footer__logo-link {
     padding-top: 0;
-    margin-bottom: 72px;
+    margin-bottom: 8px;
+  }
+
+  .page-footer__period {
+    display: block;
+    margin-bottom: 28px;
   }
 }

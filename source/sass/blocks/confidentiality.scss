@@ -99,8 +99,6 @@
 
 @media (max-width: $mobile-width) {
   .confidentiality {
-    position: relative;
-
     flex-direction: column;
 
     padding-top: 28px;
@@ -114,9 +112,6 @@
   }
 
   .confidentiality__period {
-    position: absolute;
-    bottom: 530px;
-    width: 250px;
-    left: 30px;
+    display: none;
   }
 }

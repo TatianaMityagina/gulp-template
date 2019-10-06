@@ -76,3 +76,38 @@ inputs.forEach(function (input) {
     mask: '+{7}(000)000-00-00'
   });
 });
+
+// Аккардион
+
+
+var navListElement = document.querySelectora(".navigation__list");
+var navToogleElement = document.querySelector(".navigation__toggle");
+
+var contactListElement = document.querySelector(".contacts__wrapper");
+var contactToogleElement = document.querySelector(".contacts__toggle");
+
+var accordion = function () {
+  if (navToogleElement.classList.contains("navigation__toggle--open")) {
+    navToogleElement.classList.remove("navigation__toggle--open");
+    navToogleElement.classList.add("navigation__toggle--closed");
+    contactToogleElement.classList.remove("navigation__toggle--closed");
+    contactToogleElement.classList.add("navigation__toggle--open");
+    navListElement.style.display = "block";
+    contactListElement.style.display = "none";
+  } else {
+    navToogleElement.classList.add("navigation__toggle--open");
+    navToogleElement.classList.remove("navigation__toggle--closed");
+    navListElement.style.display = "none";
+    contactToogleElement.classList.remove("navigation__toggle--closed");
+    contactToogleElement.classList.add("navigation__toggle--open");
+    contactListElement.style.display = "block";
+  }
+};
+
+navToogleElement.addEventListener('click', function () {
+  accordion();
+});
+
+contactToogleElement.addEventListener('click', function () {
+  accordion();
+});

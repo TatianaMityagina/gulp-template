@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Производство и монтаж, поставка комплектующих, блоков и модулей печатных плат">
   <title>Smart Device</title>
   <link rel="preload" href="fonts/pt-mono.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous">
@@ -55,7 +56,7 @@
     </nav>
 
     <div class="promo">
-      <h2 class="promo__title">Печатные платы</h2>
+      <h1 class="promo__title">Печатные платы</h1>
       <p class="promo__description">
         производство и монтаж, поставка комплектующих, блоков и модулей
       </p>
@@ -191,7 +192,7 @@
             </div>
 
             <label class="visually-hidden" for="text">Ваш вопрос</label>
-            <textarea name="message" id="text" type="text" placeholder="Ваш вопрос" required></textarea>
+            <textarea name="message" id="text" placeholder="Ваш вопрос" required></textarea>
 
             <div class="feedback___form-button">
               <button type="submit">Задать вопрос</button>
@@ -214,6 +215,8 @@
             <use xlink:href="#icon-logo-footer"></use>
           </svg>
         </a>
+
+        <p class="page-footer__period">1999-2018 SD Service Devices</p>
 
         <ul class="social">
           <li class="social__item">
@@ -242,6 +245,7 @@
 
       <div class="page-footer__navigation navigation">
         <h3 class="navigation__title">Разделы сайта</h3>
+        <button class="navigation__toggle navigation__toggle--closed" type="button" aria-label="Меню"></button>
         <div class="navigation__list-wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -273,7 +277,7 @@
 
       <div class="page-footer__contacts contacts">
         <h3 class="contacts__title">Наш офис </h3>
-
+        <button class="contacts__toggle contacts__toggle--open" type="button" aria-label="Меню"></button>
         <div class="contacts__wrapper">
           <p class="contacts__address">г. Мытищи, Олимпийский проспект, д.10</p>
           <a class="contacts__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
@@ -308,7 +312,7 @@
         <input type="tel" id="number" name="phone" placeholder="Телефон" required>
 
         <label class="visually-hidden" for="message">Ваш вопрос</label>
-        <textarea name="message" id="message" type="text" placeholder="Ваш вопрос" required></textarea>
+        <textarea name="message" id="message" placeholder="Ваш вопрос" required></textarea>
 
         <button type="submit">Отправить</button>
 
