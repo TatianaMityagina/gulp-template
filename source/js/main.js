@@ -79,28 +79,28 @@ inputs.forEach(function (input) {
 
 // Аккардион
 
-function open(element) {
+function openAccordion(element) {
   element.classList.remove('inactive');
   element.classList.add('active');
-  element.querySelector('.wrp').style.display = "flex";
+  element.querySelector('.wrp').style.display = 'flex';
 }
 
-function close(element) {
+function closeAccordion(element) {
   element.classList.remove('active');
   element.classList.add('inactive');
-  element.querySelector('.wrp').style.display = "none";
+  element.querySelector('.wrp').style.display = 'none';
 }
 
-var elem = document.querySelectorAll('.accordion');
+var allAccordions = document.querySelectorAll('.accordion');
 var i;
-var length = elem.length;
+var length = allAccordions.length;
 
 for (i = 0; i < length; i++) {
-  elem[i].addEventListener('click', function (evt) {
+  allAccordions[i].addEventListener('click', function (evt) {
     var element = evt.currentTarget;
-    elem.forEach( function (el) {
-      close(el);
+    allAccordions.forEach(function (item) {
+      closeAccordion(item);
     });
-    open(element);
+    openAccordion(element);
   });
 }
