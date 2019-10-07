@@ -79,27 +79,28 @@ inputs.forEach(function (input) {
 
 // Аккардион
 
-var elem = document.querySelectorAll('.accordion'); //дементы по которым будет действие клика
+function open(element) {
+  element.classList.remove('inactive');
+  element.classList.add('active');
+  element.querySelector('.wrp').style.display = "flex";
+}
 
+function close(element) {
+  element.classList.remove('active');
+  element.classList.add('inactive');
+  element.querySelector('.wrp').style.display = "none";
+}
+
+var elem = document.querySelectorAll('.accordion');
 var i;
 var length = elem.length;
 
 for (i = 0; i < length; i++) {
-  elem[i].addEventListener('click', function () {
-    for (i = 0; i < length; i++) {
-      elem[i].addEventListener('click', function () {
-        var allItems = document.querySelectorAll('.wrp'); //сначала нахоим все элементы .wrp
-        Array.from(allItems).forEach(function (item) {
-          item.classList.remove('active'); //удалаем всем .wrp класс active
-          item.classList.add('inactive');
-        });
-        Array.from(elem).forEach(function (item) {
-          item.classList.add('inactive');
-        });
-        this.classList.remove('inactive');
-        this.querySelector('.wrp').classList.add("active"); //находим ребенка кликнутого элемента и даем класс active
-        this.querySelector('.wrp').classList.remove("inactive");
-      });
-    }
+  elem[i].addEventListener('click', function (evt) {
+    var element = evt.currentTarget;
+    elem.forEach( function (el) {
+      close(el);
+    });
+    open(element);
   });
 }

@@ -97,6 +97,9 @@
   .contacts {
     position: relative;
 
+    display: flex;
+    flex-direction: column;
+
     padding-top: 28px;
     padding-bottom: 24px;
 
@@ -148,5 +151,9 @@
       background-image: url("../img/icon-plus.svg");
       background-color: transparent;
     }
+  }
+
+  .wrp {
+    display: none;
   }
 }

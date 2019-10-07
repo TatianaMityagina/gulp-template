@@ -88,6 +88,9 @@
 @media (max-width: $mobile-width) {
   .navigation {
     position: relative;
+
+    display: flex;
+    flex-direction: column;
     padding-top: 28px;
     padding-bottom: 26px;
 
@@ -145,5 +148,9 @@
 
       background-image: url("../img/icon-plus.svg");
     }
+  }
+
+  .wrp {
+    display: none;
   }
 }
