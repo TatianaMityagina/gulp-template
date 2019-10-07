@@ -11,7 +11,7 @@
 
   background-color: #1b2d37;
   background-image: url("../img/main-bg-desktop@1x.png");
-  background-size: auto 878px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 
   overflow: hidden;
@@ -20,11 +20,25 @@
     background-image: url("../img/main-bg-desktop@2x.png");
   }
 
+  &::before {
+    position: absolute;
+    content: "";
+    top: 118px;
+    left: 810px;
+    z-index: -1;
+
+    width: 670.33px;
+    height: 641px;
+
+    background-image: url("../img/triangle-desktop@1x.svg");
+    background-repeat: no-repeat;
+  }
+
   &::after {
     position: absolute;
     content: "";
     top: 258px;
-    left: 800px;
+    left: 820px;
     z-index: -1;
 
     width: 705px;
@@ -53,6 +67,10 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/main-bg-tablet@2x.png");
       background-size: auto 690px;
+    }
+
+    &::before {
+      display: none;
     }
 
     &::after {
